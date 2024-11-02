@@ -1,36 +1,120 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dynamic Kiosk Display System
 
-## Getting Started
+A flexible, multi-screen kiosk display system built with Next.js that allows you to manage and display content across multiple screens with animations and live updates.
 
-First, run the development server:
+## Features
 
+- Multiple kiosk displays from a single codebase
+- Admin interface for content management
+- Animated content transitions
+- Responsive design
+- Dark mode support
+- Background patterns with custom words
+- Gradient text animations
+
+## Prerequisites
+
+- Node.js 18+ installed (LTS version recommended)
+- npm (comes with Node.js) or yarn package manager
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone [your-repo-url]
+cd [project-directory]
+```
+
+2. Install dependencies:
+```bash
+npm install --ignore-scripts
+```
+
+3. Then manually run the initialization:
+```bash
+npx tsx scripts/init.ts
+```
+
+The installation will automatically:
+- Set up all required dependencies
+- Create the data directory structure
+- Initialize a demo kiosk configuration
+
+Note: Unlike Python projects, Node.js doesn't require a virtual environment. All dependencies are installed locally in the `node_modules` folder of your project.
+
+## Running the Application
+
+1. Start the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Access the different parts of the application:
+- Main Demo: [http://localhost:3000](http://localhost:3000)
+- Admin Interface: [http://localhost:3000/admin](http://localhost:3000/admin)
+- Specific Kiosk: [http://localhost:3000/kiosk/[id]](http://localhost:3000/kiosk/demo-1)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Managing Kiosks
 
-## Learn More
+1. Navigate to `/admin`
+2. Click "New Kiosk" to create a new kiosk configuration
+3. Fill out the form with your desired content:
+   - Name and Header information
+   - Background words (comma-separated)
+   - Main content
+   - Sections with bullet points
+4. Click "Save Changes" to update the kiosk
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+├── app/
+│   ├── admin/            # Admin interface
+│   ├── api/             # API routes
+│   └── kiosk/           # Kiosk display pages
+├── components/
+│   ├── admin/           # Admin components
+│   └── ui/              # Shared UI components
+├── data/
+│   └── kiosks.json      # Kiosk configurations
+└── types/
+    └── kiosk.ts         # TypeScript definitions
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## API Routes
 
-## Deploy on Vercel
+- `GET /api/kiosks` - List all kiosks
+- `GET /api/kiosks/[id]` - Get specific kiosk
+- `PUT /api/kiosks/[id]` - Update kiosk
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a new Pull Request
+
+## License
+
+[Your chosen license]
+
+## Troubleshooting
+
+### Installation Issues
+
+If you encounter the error `tsx: command not found` during installation:
+
+1. First try installing dependencies without the postinstall script:
+```bash
+npm install --ignore-scripts
+```
+
+2. Then manually run the initialization:
+```bash
+npx tsx scripts/init.ts
+```
