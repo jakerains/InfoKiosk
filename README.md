@@ -21,8 +21,8 @@ A flexible, multi-screen kiosk display system built with Next.js that allows you
 
 1. Clone the repository:
 ```bash
-git clone [your-repo-url]
-cd [project-directory]
+git clone https://github.com/jakerains/InfoKiosk.git
+cd InfoKiosk
 ```
 
 2. Install dependencies:
