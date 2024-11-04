@@ -9,7 +9,18 @@ export interface KioskConfig {
   headerTitle: string;
   headerSubtitle: string;
   backgroundWords: string[];
+  mainTitle: string;
+  mainDescription: string;
+  showPoweredBy: boolean;
   footerText: string;
+  mainIcon: string;
+  infoBox1: {
+    title: string;
+    content: string[];
+  };
+  infoBox2: {
+    title: string;
+    content: string[];
+  };
   sections: KioskSection[];
-  // ... other fields as required
 } 

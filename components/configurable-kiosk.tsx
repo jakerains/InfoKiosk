@@ -147,6 +147,12 @@ export function ConfigurableKiosk({ kioskId }: ConfigurableKioskProps) {
           </Card>
         </div>
       </main>
+
+      <footer className="mt-8 text-center relative z-10">
+        {config.showPoweredBy && (
+          <p className="text-lg text-gray-400">{config.footerText}</p>
+        )}
+      </footer>
     </div>
   )
 }
