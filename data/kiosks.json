@@ -56,10 +56,10 @@
       "WORD3",
       "WORD4"
     ],
-    "mainTitle": "Interactive AI Customer Service Agents",
-    "mainDescription": "Enter main description",
+    "mainTitle": "Rivertown Ball Company - Interactive Chatbot",
+    "mainDescription": "The rivertown ball compnay blsdijflsidjflskdjEnter main description",
     "showPoweredBy": true,
-    "footerText": "Powered by GenAIJake",
+    "footerText": "",
     "mainIcon": "Cpu",
     "infoBox1": {
       "title": "Info Box 1",
@@ -77,13 +77,23 @@
     },
     "sections": [
       {
-        "title": "New Section",
+        "title": "box1",
         "content": [
-          "New Item"
+          "item 1",
+          "imtel 2",
+          "New Itemjlljlkjlo"
         ]
       },
       {
-        "title": "New Section",
+        "title": "New Sectionlkj;ilj;o",
+        "content": [
+          "New Itemjlij;li",
+          "New Itemj;lij;l",
+          "New Itehuhkm"
+        ]
+      },
+      {
+        "title": "lijlij",
         "content": [
           "New Item"
         ]
