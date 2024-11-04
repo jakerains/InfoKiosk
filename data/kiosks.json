@@ -100,36 +100,50 @@
       }
     ]
   },
-  "kiosk-1730729176319-owbo57": {
-    "id": "kiosk-1730729176319-owbo57",
-    "name": "NEW KIOSK",
-    "headerTitle": "NEW KIOSK",
-    "headerSubtitle": "Enter subtitle",
+  "kiosk-1730753815598-85vqey": {
+    "id": "kiosk-1730753815598-85vqey",
+    "name": "AI Innovation Lab (Copy)",
+    "headerTitle": "INNOVATION LAB (Copy)",
+    "headerSubtitle": "",
     "backgroundWords": [
-      "WORD1",
-      "WORD2",
-      "WORD3",
-      "WORD4"
+      "INNOVATE",
+      "CONNECT",
+      "INSPIRE",
+      "THRIVE"
     ],
-    "mainTitle": "Enter main title",
-    "mainDescription": "Enter main description",
-    "showPoweredBy": true,
-    "footerText": "Powered by GenAIJake",
-    "mainIcon": "Cpu",
+    "mainTitle": "Build with cutting-edge technology",
+    "mainDescription": "Experience the power of our latest innovations in AI and machine learning. Our demo showcases real-time processing, advanced analytics, and seamless integration capabilities.",
+    "footerText": "Powered by Sterling Innovation",
     "infoBox1": {
-      "title": "Info Box 1",
+      "title": "Tech Stack",
       "content": [
-        "Item 1",
-        "Item 2"
+        "React",
+        "Next.js",
+        "TypeScript",
+        "TensorFlow.js"
       ]
     },
     "infoBox2": {
-      "title": "Info Box 2",
+      "title": "Use Cases",
       "content": [
-        "Item 1",
-        "Item 2"
+        "Natural Language Processing",
+        "Image Recognition",
+        "Predictive Analytics"
       ]
     },
-    "sections": []
+    "sections": [
+      {
+        "title": "New Section",
+        "content": [
+          "New Item"
+        ]
+      },
+      {
+        "title": "New Section",
+        "content": [
+          "New Item"
+        ]
+      }
+    ]
   }
 }

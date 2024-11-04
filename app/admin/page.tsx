@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react'
 import { KioskConfig } from '@/types/kiosk'
 import { Button } from '@/components/ui/button'
-import { PlusCircle, Trash2, ArrowLeft, ExternalLink } from 'lucide-react'
+import { PlusCircle, Trash2, ArrowLeft, ExternalLink, Copy } from 'lucide-react'
 import { KioskEditor } from '@/components/admin/kiosk-editor'
 import { StrictMode } from 'react'
 import { useToast } from "@/components/ui/use-toast"
@@ -118,6 +118,29 @@ function AdminPage() {
     setSelectedKioskId(newId)
   }
 
+  const duplicateKiosk = (kioskId: string) => {
+    const timestamp = Date.now()
+    const randomString = Math.random().toString(36).substring(2, 8)
+    const newId = `kiosk-${timestamp}-${randomString}`
+    
+    // Create a deep copy of the kiosk and update its name
+    const originalKiosk = kiosks[kioskId]
+    const duplicatedKiosk: KioskConfig = {
+      ...JSON.parse(JSON.stringify(originalKiosk)),
+      id: newId,
+      name: `${originalKiosk.name} (Copy)`,
+      headerTitle: `${originalKiosk.headerTitle} (Copy)`
+    }
+    
+    setKiosks(prev => ({ ...prev, [newId]: duplicatedKiosk }))
+    setSelectedKioskId(newId)
+    
+    toast({
+      title: "Success",
+      description: "Kiosk duplicated successfully",
+    })
+  }
+
   if (isLoading) {
     return (
       <div className="min-h-screen bg-background p-6 flex items-center justify-center">
@@ -170,6 +193,17 @@ function AdminPage() {
                     onClick={() => handleKioskSelect(id)}
                   >
                     <span className="truncate">{kiosk.name}</span>
+                  </Button>
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    onClick={(e) => {
+                      e.stopPropagation()
+                      duplicateKiosk(id)
+                    }}
+                    title="Duplicate Kiosk"
+                  >
+                    <Copy className="h-4 w-4" />
                   </Button>
                   <Button
                     variant="destructive"
