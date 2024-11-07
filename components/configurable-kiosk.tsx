@@ -92,9 +92,9 @@ export function ConfigurableKiosk({ kioskId }: ConfigurableKioskProps) {
       </header>
 
       {/* Main Content - Responsive Layout */}
-      <main className="flex-grow grid grid-cols-1 lg:grid-cols-3 gap-6 relative z-10">
-        {/* Main Box - Full width on mobile, 2/3 on desktop */}
-        <section className="lg:col-span-2">
+      <main className={`flex-grow grid gap-6 relative z-10 ${config.verticalLayout ? 'grid-cols-1' : 'grid-cols-1 lg:grid-cols-3'}`}>
+        {/* Main Box - Full width on vertical layout or mobile, 2/3 on desktop horizontal */}
+        <section className={config.verticalLayout ? 'col-span-1' : 'lg:col-span-2'}>
           <Card className="h-full bg-black/40 backdrop-blur-sm border border-emerald-900/20">
             <CardContent className="h-full flex flex-col justify-center p-6">
               <h2 className="text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400">
@@ -108,7 +108,7 @@ export function ConfigurableKiosk({ kioskId }: ConfigurableKioskProps) {
         </section>
 
         {/* Right Side / Bottom Boxes Container */}
-        <div className="lg:col-span-1 grid grid-cols-2 lg:grid-cols-1 gap-6">
+        <div className={`${config.verticalLayout ? 'grid-cols-1' : 'lg:col-span-1 grid grid-cols-2 lg:grid-cols-1'} gap-6`}>
           {/* First Box */}
           <Card className="bg-black/40 backdrop-blur-sm border border-emerald-900/20">
             <CardContent className="p-6 flex flex-col h-full">

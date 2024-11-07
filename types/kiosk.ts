@@ -24,4 +24,5 @@ export interface KioskConfig {
   };
   sections: KioskSection[];
   rotationSpeed: number;
+  verticalLayout?: boolean;
 } 

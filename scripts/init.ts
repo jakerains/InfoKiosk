@@ -22,7 +22,8 @@ const initialKioskData = {
       "title": "Use Cases",
       "content": ["Natural Language Processing", "Image Recognition", "Predictive Analytics"]
     },
-    "sections": []
+    "sections": [],
+    "verticalLayout": false
   }
 }
 

@@ -138,6 +138,19 @@ export function KioskEditor({ kiosk, onSave }: KioskEditorProps) {
               min={1}
             />
           </div>
+
+          <div>
+            <label className="text-sm font-medium">Vertical Layout</label>
+            <div className="flex items-center space-x-2 mt-1">
+              <input
+                type="checkbox"
+                checked={editedKiosk.verticalLayout}
+                onChange={e => updateField('verticalLayout', e.target.checked)}
+                className="h-4 w-4 rounded border-gray-300"
+              />
+              <span className="text-sm text-gray-500">Enable vertical layout for portrait displays</span>
+            </div>
+          </div>
         </CardContent>
       </Card>
 
