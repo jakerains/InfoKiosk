@@ -106,5 +106,6 @@
       ]
     }
   ],
-  "rotationSpeed": 10
+  "rotationSpeed": 10,
+  "verticalLayout": true
 }
