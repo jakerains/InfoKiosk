@@ -92,9 +92,9 @@ export function ConfigurableKiosk({ kioskId }: ConfigurableKioskProps) {
       </header>
 
       {/* Main Content - Responsive Layout */}
-      <main className={`flex-grow flex flex-col gap-6 relative z-10 ${config.verticalLayout ? 'h-full' : ''}`}>
+      <main className={`flex-grow flex flex-col relative z-10 ${config.verticalLayout ? 'h-full justify-between' : ''}`}>
         {/* Main Box - Full width in vertical layout */}
-        <section className={`${config.verticalLayout ? 'flex-grow' : 'lg:col-span-2'}`}>
+        <section className="flex-grow">
           <Card className="h-full bg-black/40 backdrop-blur-sm border border-emerald-900/20">
             <CardContent className="h-full flex flex-col justify-center p-6">
               <h2 className="text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400">
@@ -108,59 +108,61 @@ export function ConfigurableKiosk({ kioskId }: ConfigurableKioskProps) {
         </section>
 
         {/* Bottom Boxes Container - Always side by side */}
-        <div className="grid grid-cols-2 gap-6">
-          {/* First Box */}
-          <Card className="bg-black/40 backdrop-blur-sm border border-emerald-900/20">
-            <CardContent className="p-6 flex flex-col h-full">
-              <h3 className="text-3xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400">
-                {config.sections[activeSection].title}
-              </h3>
-              <AnimatePresence mode="wait">
-                {isClient && config.sections && config.sections.length > 0 && (
-                  <motion.div
-                    key={activeSection}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -20 }}
-                    className="flex-grow"
-                  >
-                    <ul className="list-disc list-inside text-xl text-gray-300">
-                      {config.sections[activeSection].content.map((item, index) => (
-                        <li key={index} className="mb-2">{item}</li>
-                      ))}
-                    </ul>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </CardContent>
-          </Card>
+        <section className="flex-grow">
+          <div className="h-full grid grid-cols-2 gap-6">
+            {/* First Box */}
+            <Card className="h-full bg-black/40 backdrop-blur-sm border border-emerald-900/20">
+              <CardContent className="p-6 flex flex-col h-full">
+                <h3 className="text-3xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400">
+                  {config.sections[activeSection].title}
+                </h3>
+                <AnimatePresence mode="wait">
+                  {isClient && config.sections && config.sections.length > 0 && (
+                    <motion.div
+                      key={activeSection}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -20 }}
+                      className="flex-grow"
+                    >
+                      <ul className="list-disc list-inside text-xl text-gray-300">
+                        {config.sections[activeSection].content.map((item, index) => (
+                          <li key={index} className="mb-2">{item}</li>
+                        ))}
+                      </ul>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </CardContent>
+            </Card>
 
-          {/* Second Box */}
-          <Card className="bg-black/40 backdrop-blur-sm border border-emerald-900/20">
-            <CardContent className="p-6 flex flex-col h-full">
-              <h3 className="text-3xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400">
-                {config.sections[secondarySection].title}
-              </h3>
-              <AnimatePresence mode="wait">
-                {isClient && config.sections && config.sections.length > 0 && (
-                  <motion.div
-                    key={secondarySection}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -20 }}
-                    className="flex-grow"
-                  >
-                    <ul className="list-disc list-inside text-xl text-gray-300">
-                      {config.sections[secondarySection].content.map((item, index) => (
-                        <li key={index} className="mb-2">{item}</li>
-                      ))}
-                    </ul>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </CardContent>
-          </Card>
-        </div>
+            {/* Second Box */}
+            <Card className="h-full bg-black/40 backdrop-blur-sm border border-emerald-900/20">
+              <CardContent className="p-6 flex flex-col h-full">
+                <h3 className="text-3xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400">
+                  {config.sections[secondarySection].title}
+                </h3>
+                <AnimatePresence mode="wait">
+                  {isClient && config.sections && config.sections.length > 0 && (
+                    <motion.div
+                      key={secondarySection}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -20 }}
+                      className="flex-grow"
+                    >
+                      <ul className="list-disc list-inside text-xl text-gray-300">
+                        {config.sections[secondarySection].content.map((item, index) => (
+                          <li key={index} className="mb-2">{item}</li>
+                        ))}
+                      </ul>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
       </main>
 
       <footer className="mt-8 text-center relative z-10">
