@@ -23,4 +23,5 @@ export interface KioskConfig {
     content: string[];
   };
   sections: KioskSection[];
+  rotationSpeed: number;
 } 

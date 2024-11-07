@@ -15,31 +15,44 @@ export function ConfigurableKiosk({ kioskId }: ConfigurableKioskProps) {
   const [config, setConfig] = useState<KioskConfig | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [isClient, setIsClient] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
 
   useEffect(() => {
     setIsClient(true)
   }, [])
 
   useEffect(() => {
-    fetch(`/api/kiosks/${kioskId}`)
-      .then(res => {
-        if (!res.ok) throw new Error('Failed to fetch kiosk data')
-        return res.json()
-      })
-      .then(data => setConfig(data))
-      .catch(err => setError(err.message))
+    fetchKioskConfig()
   }, [kioskId])
 
   useEffect(() => {
     if (!config?.sections || config.sections.length === 0) return
     
+    const intervalDuration = (config.rotationSpeed || 5) * 1000; // Default to 5 seconds if not set
     const timer = setInterval(() => {
       setActiveSection((prev) => (prev + 1) % config.sections.length)
       setSecondarySection((prev) => ((prev + 1) % config.sections.length))
-    }, 5000)
+    }, intervalDuration)
 
     return () => clearInterval(timer)
   }, [config])
+
+  const fetchKioskConfig = async () => {
+    try {
+      setIsLoading(true);
+      const response = await fetch(`/api/kiosks/${kioskId}`);
+      if (!response.ok) {
+        throw new Error('Failed to fetch kiosk configuration');
+      }
+      const data = await response.json();
+      setConfig(data);
+    } catch (error) {
+      console.error('Error fetching kiosk config:', error);
+      setError('Failed to load kiosk configuration');
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   if (error || !config) return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white p-6 flex items-center justify-center">
@@ -98,7 +111,10 @@ export function ConfigurableKiosk({ kioskId }: ConfigurableKioskProps) {
         <div className="lg:col-span-1 grid grid-cols-2 lg:grid-cols-1 gap-6">
           {/* First Box */}
           <Card className="bg-black/40 backdrop-blur-sm border border-emerald-900/20">
-            <CardContent className="h-full flex flex-col justify-center p-6">
+            <CardContent className="p-6 flex flex-col h-full">
+              <h3 className="text-3xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400">
+                {config.sections[activeSection].title}
+              </h3>
               <AnimatePresence mode="wait">
                 {isClient && config.sections && config.sections.length > 0 && (
                   <motion.div
@@ -106,10 +122,8 @@ export function ConfigurableKiosk({ kioskId }: ConfigurableKioskProps) {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -20 }}
+                    className="flex-grow"
                   >
-                    <h3 className="text-3xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400">
-                      {config.sections[activeSection].title}
-                    </h3>
                     <ul className="list-disc list-inside text-xl text-gray-300">
                       {config.sections[activeSection].content.map((item, index) => (
                         <li key={index} className="mb-2">{item}</li>
@@ -123,7 +137,10 @@ export function ConfigurableKiosk({ kioskId }: ConfigurableKioskProps) {
 
           {/* Second Box */}
           <Card className="bg-black/40 backdrop-blur-sm border border-emerald-900/20">
-            <CardContent className="h-full flex flex-col justify-center p-6">
+            <CardContent className="p-6 flex flex-col h-full">
+              <h3 className="text-3xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400">
+                {config.sections[secondarySection].title}
+              </h3>
               <AnimatePresence mode="wait">
                 {isClient && config.sections && config.sections.length > 0 && (
                   <motion.div
@@ -131,10 +148,8 @@ export function ConfigurableKiosk({ kioskId }: ConfigurableKioskProps) {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -20 }}
+                    className="flex-grow"
                   >
-                    <h3 className="text-3xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400">
-                      {config.sections[secondarySection].title}
-                    </h3>
                     <ul className="list-disc list-inside text-xl text-gray-300">
                       {config.sections[secondarySection].content.map((item, index) => (
                         <li key={index} className="mb-2">{item}</li>

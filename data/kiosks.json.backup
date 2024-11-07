@@ -1,0 +1,197 @@
+{
+  "demo-1": {
+    "id": "demo-1",
+    "name": "AI Innovation Lab",
+    "headerTitle": "INNOVATION LAB",
+    "headerSubtitle": "",
+    "backgroundWords": [
+      "INNOVATE",
+      "CONNECT",
+      "INSPIRE",
+      "THRIVE"
+    ],
+    "mainTitle": "Enhance Quality Control with AI Vision",
+    "mainDescription": "Leverage advanced computer vision to automate defect detection, quality control, and supply chain optimization across industries. By implementing real-time visual inspection and AI-driven analytics, organizations can enhance quality assurance, streamline processes, and reduce human error in manufacturing and logistics. This solution ensures that every product meets the highest standards while improving operational efficiency.",
+    "footerText": "",
+    "infoBox1": {
+      "title": "Tech Stack",
+      "content": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "TensorFlow.js"
+      ]
+    },
+    "infoBox2": {
+      "title": "Use Cases",
+      "content": [
+        "Natural Language Processing",
+        "Image Recognition",
+        "Predictive Analytics"
+      ]
+    },
+    "sections": [
+      {
+        "title": "Uses and Benefits of Computer Vision",
+        "content": [
+          "Predictive Maintenance: Uses machine-learning algorithms to detect early signs of equipment wear or malfunction by processing visual data, allowing you to anticipate and prevent failures.",
+          "Quality Control and Inspection: AI and image processing automatically detect defects and deviations from specifications, ensuring product quality.",
+          "Supply Chain Optimization: AI enhances visibility, accuracy, and efficiency throughout the supply chain process, reducing bottlenecks and improving performance."
+        ]
+      },
+      {
+        "title": "Uses and Benefits of Computer Vision",
+        "content": [
+          "Safety and Security: Image and video analysis enhance protection, enabling more effective surveillance and access control, helping reduce incidents.",
+          "Predictive Analytics: Combines image processing with machine learning to forecast future outcomes, supporting proactive decision-making.",
+          "Data Insights: Extract actionable intelligence from visual data, helping uncover hidden insights and support data-driven decisions."
+        ]
+      },
+      {
+        "title": "Technologies",
+        "content": [
+          "NVIDIA NEMO: Powers high-speed processing for real-time visual analytics.",
+          "ROBOFLOW: Assists in data labeling, model training, and vision AI deployment.",
+          "Chooch AI, IronYUN, NVIDIA DeepStream, NVIDIA Holoscan, NVIDIA Omniverse: Enhance visual analysis, pattern recognition, and actionable data extraction."
+        ]
+      },
+      {
+        "title": "Federal Use Cases",
+        "content": [
+          "Defense: Aerial reconnaissance, object recognition, perimeter security, and maintenance inspection.",
+          "Transportation (DOT, FAA): Traffic monitoring, license plate recognition, railway track inspection, and drone detection.",
+          "Law Enforcement and Security (FBI, DHS): Facial recognition, video analytics, crowd monitoring, and border surveillance."
+        ]
+      },
+      {
+        "title": "Commercial Use Cases",
+        "content": [
+          "Retail Operations: Self-checkout systems and inventory monitoring.",
+          "Manufacturing and Quality Control: Automated part verification and process optimization.",
+          "Warehouse and Logistics: Inventory management, fleet monitoring, and efficient order processing.",
+          "Healthcare: Equipment tracking, disease screening, and public health surveillance."
+        ]
+      },
+      {
+        "title": "Questions to Start the Conversation - Current State",
+        "content": [
+          "What are the most time-consuming visual inspection tasks in your operations?",
+          "Which processes currently rely heavily on human verification or decision-making?",
+          "How are you currently collecting and analyzing visual data?",
+          "Where do you see the most errors in visual inspections?"
+        ]
+      },
+      {
+        "title": "Questions to Start the Conversation - Pain Points and Challenges",
+        "content": [
+          "What challenges do you face with maintaining consistency in inspections?",
+          "Which parts of your operations would benefit most from 24/7 monitoring?",
+          "What compliance issues could be better addressed with automated monitoring?",
+          "  How much time does your team spend on manual inspections, and what is the impact on productivity?"
+        ]
+      }
+    ],
+    "rotationSpeed": 10
+  },
+  "kiosk-1730724284541": {
+    "id": "kiosk-1730724284541",
+    "name": "customerchatbot",
+    "headerTitle": "INNOVATION LAB",
+    "headerSubtitle": "Rivertown Ball Company",
+    "backgroundWords": [
+      "WORD1",
+      "WORD2",
+      "WORD3",
+      "WORD4"
+    ],
+    "mainTitle": "Rivertown Ball Company - Interactive Chatbot",
+    "mainDescription": "The rivertown ball compnay blsdijflsidjflskdjEnter main description",
+    "showPoweredBy": true,
+    "footerText": "",
+    "mainIcon": "Cpu",
+    "infoBox1": {
+      "title": "Info Box 1",
+      "content": [
+        "Item 1",
+        "Item 2"
+      ]
+    },
+    "infoBox2": {
+      "title": "Info Box 2",
+      "content": [
+        "Item 1",
+        "Item 2"
+      ]
+    },
+    "sections": [
+      {
+        "title": "box1",
+        "content": [
+          "item 1",
+          "imtel 2",
+          "New Itemjlljlkjlo"
+        ]
+      },
+      {
+        "title": "New Sectionlkj;ilj;o",
+        "content": [
+          "New Itemjlij;li",
+          "New Itemj;lij;l",
+          "New Itehuhkm"
+        ]
+      },
+      {
+        "title": "lijlij",
+        "content": [
+          "New Item"
+        ]
+      }
+    ]
+  },
+  "kiosk-1730753815598-85vqey": {
+    "id": "kiosk-1730753815598-85vqey",
+    "name": "AI Innovation Lab (Copy)",
+    "headerTitle": "INNOVATION LAB (Copy)",
+    "headerSubtitle": "",
+    "backgroundWords": [
+      "INNOVATE",
+      "CONNECT",
+      "INSPIRE",
+      "THRIVE"
+    ],
+    "mainTitle": "Build with cutting-edge technology",
+    "mainDescription": "Experience the power of our latest innovations in AI and machine learning. Our demo showcases real-time processing, advanced analytics, and seamless integration capabilities.",
+    "footerText": "Powered by Sterling Innovation",
+    "infoBox1": {
+      "title": "Tech Stack",
+      "content": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "TensorFlow.js"
+      ]
+    },
+    "infoBox2": {
+      "title": "Use Cases",
+      "content": [
+        "Natural Language Processing",
+        "Image Recognition",
+        "Predictive Analytics"
+      ]
+    },
+    "sections": [
+      {
+        "title": "New Section",
+        "content": [
+          "New Item"
+        ]
+      },
+      {
+        "title": "New Section",
+        "content": [
+          "New Item"
+        ]
+      }
+    ]
+  }
+}

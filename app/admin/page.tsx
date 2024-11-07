@@ -24,8 +24,10 @@ function AdminPage() {
   const { toast } = useToast()
 
   useEffect(() => {
-    fetchKiosks()
-  }, [])
+    fetchKiosks();
+    // This effect should only run once on mount
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const fetchKiosks = async () => {
     try {
@@ -87,7 +89,7 @@ function AdminPage() {
     }
   }
 
-  const createNewKiosk = () => {
+  const createNewKiosk = async () => {
     const timestamp = Date.now()
     const randomString = Math.random().toString(36).substring(2, 8)
     const newId = `kiosk-${timestamp}-${randomString}`
@@ -114,11 +116,12 @@ function AdminPage() {
       sections: []
     }
     
+    await saveNewKiosk(newKiosk)
     setKiosks(prev => ({ ...prev, [newId]: newKiosk }))
     setSelectedKioskId(newId)
   }
 
-  const duplicateKiosk = (kioskId: string) => {
+  const duplicateKiosk = async (kioskId: string) => {
     const timestamp = Date.now()
     const randomString = Math.random().toString(36).substring(2, 8)
     const newId = `kiosk-${timestamp}-${randomString}`
@@ -132,6 +135,7 @@ function AdminPage() {
       headerTitle: `${originalKiosk.headerTitle} (Copy)`
     }
     
+    await saveNewKiosk(duplicatedKiosk)
     setKiosks(prev => ({ ...prev, [newId]: duplicatedKiosk }))
     setSelectedKioskId(newId)
     
@@ -140,6 +144,69 @@ function AdminPage() {
       description: "Kiosk duplicated successfully",
     })
   }
+
+  const exportKiosk = async (kioskId: string) => {
+    if (!kioskId) return;
+    window.location.href = `/api/kiosks/export/${kioskId}`;
+  };
+
+  const importKiosk = async (file: File) => {
+    try {
+      const content = await file.text();
+      const kioskData = JSON.parse(content);
+      
+      const response = await fetch('/api/kiosks/import', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(kioskData),
+      });
+
+      if (!response.ok) throw new Error('Failed to import kiosk');
+      
+      const importedKiosk = await response.json();
+      setKiosks(prev => ({
+        ...prev,
+        [importedKiosk.id]: importedKiosk
+      }));
+      
+      toast({
+        title: "Success",
+        description: "Kiosk imported successfully",
+      });
+    } catch (error) {
+      console.error('Error importing kiosk:', error);
+      toast({
+        title: "Error",
+        description: "Failed to import kiosk",
+        variant: "destructive",
+      });
+    }
+  };
+
+  const saveNewKiosk = async (newKiosk: KioskConfig) => {
+    try {
+      const response = await fetch(`/api/kiosks/${newKiosk.id}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(newKiosk),
+      });
+
+      if (!response.ok) throw new Error('Failed to save kiosk');
+      
+      await fetchKiosks(); // Refresh the list
+    } catch (error) {
+      console.error('Error saving kiosk:', error);
+      toast({
+        title: "Error",
+        description: "Failed to save kiosk",
+        variant: "destructive",
+      });
+    }
+  };
 
   if (isLoading) {
     return (
@@ -170,10 +237,39 @@ function AdminPage() {
             </Link>
             <h1 className="text-4xl font-bold">Kiosk Admin</h1>
           </div>
-          <Button onClick={createNewKiosk}>
-            <PlusCircle className="mr-2 h-4 w-4" />
-            New Kiosk
-          </Button>
+          <div className="flex gap-2 mb-4">
+            <Button onClick={createNewKiosk}>
+              <PlusCircle className="mr-2 h-4 w-4" />
+              New Kiosk
+            </Button>
+            <Button
+              variant="outline"
+              onClick={() => exportKiosk(selectedKioskId)}
+              disabled={!selectedKioskId}
+            >
+              Export Kiosk
+            </Button>
+            <div>
+              <input
+                type="file"
+                accept=".json"
+                className="hidden"
+                id="import-kiosk"
+                onChange={(e) => {
+                  const file = e.target.files?.[0];
+                  if (file) importKiosk(file);
+                  // Reset the input
+                  e.target.value = '';
+                }}
+              />
+              <Button
+                variant="outline"
+                onClick={() => document.getElementById('import-kiosk')?.click()}
+              >
+                Import Kiosk
+              </Button>
+            </div>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">

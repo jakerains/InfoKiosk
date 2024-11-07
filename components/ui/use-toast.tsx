@@ -15,10 +15,6 @@ type ToasterState = {
   toasts: ToasterToast[]
 }
 
-const toastState = {
-  toasts: [] as ToasterToast[],
-}
-
 let listeners: ((state: ToasterState) => void)[] = []
 
 let memoryState: ToasterState = { toasts: [] }

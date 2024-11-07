@@ -1,68 +1,46 @@
-import { NextRequest, NextResponse } from 'next/server';
-import { promises as fs } from 'fs';
-import path from 'path';
-
-const dataFilePath = path.join(process.cwd(), 'data', 'kiosks.json');
-
-// Helper function to read kiosks data
-async function getKiosks() {
-  const fileContents = await fs.readFile(dataFilePath, 'utf8');
-  return JSON.parse(fileContents);
-}
+import { NextResponse } from 'next/server';
+import { loadKioskFromFile, saveKioskToFile, deleteKiosk } from '@/lib/kiosk-storage';
+import type { KioskConfig } from '@/types/kiosk';
 
 export async function GET(
-  request: NextRequest,
+  request: Request,
   { params }: { params: { id: string } }
-) {
+): Promise<NextResponse> {
   try {
-    const kiosks = await getKiosks();
-    const kiosk = kiosks[params.id];
-    
-    if (!kiosk) {
-      return NextResponse.json({ error: 'Kiosk not found' }, { status: 404 });
-    }
-    
+    const { id } = params
+    const kiosk = await loadKioskFromFile(id);
     return NextResponse.json(kiosk);
-  } catch (error) {
+  } catch (err) {
+    console.error('API Error:', err);
+    return NextResponse.json({ error: 'Kiosk not found' }, { status: 404 });
+  }
+}
+
+export async function PUT(
+  request: Request,
+  { params }: { params: { id: string } }
+): Promise<NextResponse> {
+  try {
+    const { id } = params
+    const updatedKiosk: KioskConfig = await request.json();
+    await saveKioskToFile(updatedKiosk);
+    return NextResponse.json(updatedKiosk);
+  } catch (err) {
+    console.error('Update error:', err);
     return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
   }
 }
 
 export async function DELETE(
-  request: NextRequest,
+  request: Request,
   { params }: { params: { id: string } }
-) {
+): Promise<NextResponse> {
   try {
-    const kiosks = await getKiosks();
-    
-    if (!kiosks[params.id]) {
-      return NextResponse.json({ error: 'Kiosk not found' }, { status: 404 });
-    }
-
-    delete kiosks[params.id];
-    await fs.writeFile(dataFilePath, JSON.stringify(kiosks, null, 2));
-    
+    const { id } = params
+    await deleteKiosk(id);
     return NextResponse.json({ message: 'Kiosk deleted successfully' });
-  } catch (error) {
-    console.error('Delete error:', error);
-    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
-  }
-}
-
-export async function PUT(
-  request: NextRequest,
-  { params }: { params: { id: string } }
-) {
-  try {
-    const updatedKiosk = await request.json();
-    const kiosks = await getKiosks();
-    
-    kiosks[params.id] = updatedKiosk;
-    await fs.writeFile(dataFilePath, JSON.stringify(kiosks, null, 2));
-    
-    return NextResponse.json(updatedKiosk);
-  } catch (error) {
-    console.error('Update error:', error);
+  } catch (err) {
+    console.error('Delete error:', err);
     return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
   }
 }

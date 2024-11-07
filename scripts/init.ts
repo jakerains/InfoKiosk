@@ -1,5 +1,6 @@
 import { promises as fs } from 'fs'
 import path from 'path'
+import { KIOSKS_DIR, saveKioskToFile } from '@/lib/kiosk-storage'
 
 const initialKioskData = {
   "demo-1": {
@@ -26,21 +27,34 @@ const initialKioskData = {
 }
 
 async function init() {
-  const dataDir = path.join(process.cwd(), 'data')
-  const dataFile = path.join(dataDir, 'kiosks.json')
-
   try {
-    // Create data directory if it doesn't exist
-    await fs.mkdir(dataDir, { recursive: true })
+    // Create kiosks directory if it doesn't exist
+    await fs.mkdir(KIOSKS_DIR, { recursive: true })
     
-    // Check if kiosks.json exists
+    // Check if old kiosks.json exists and migrate if needed
+    const oldDataPath = path.join(process.cwd(), 'data', 'kiosks.json')
     try {
-      await fs.access(dataFile)
-      console.log('Data file already exists, skipping initialization')
-    } catch {
-      // Create initial kiosks.json if it doesn't exist
-      await fs.writeFile(dataFile, JSON.stringify(initialKioskData, null, 2))
-      console.log('Created initial kiosks.json with demo data')
+      const oldData = await fs.readFile(oldDataPath, 'utf8')
+      const kiosks = JSON.parse(oldData)
+      
+      // Migrate each kiosk to its own file
+      for (const [id, kiosk] of Object.entries(kiosks)) {
+        await saveKioskToFile(kiosk as any)
+      }
+      
+      // Optionally backup and remove the old file
+      await fs.rename(oldDataPath, `${oldDataPath}.backup`)
+      console.log('Migrated existing kiosks to individual files')
+    } catch (err) {
+      // If old file doesn't exist, create demo kiosk
+      const demoKioskPath = path.join(KIOSKS_DIR, 'demo-1.json')
+      try {
+        await fs.access(demoKioskPath)
+        console.log('Demo kiosk already exists, skipping initialization')
+      } catch {
+        await saveKioskToFile(initialKioskData["demo-1"])
+        console.log('Created initial demo kiosk')
+      }
     }
   } catch (error) {
     console.error('Error initializing data:', error)

@@ -14,12 +14,16 @@ interface KioskEditorProps {
 }
 
 export function KioskEditor({ kiosk, onSave }: KioskEditorProps) {
-  const [editedKiosk, setEditedKiosk] = useState<KioskConfig>(kiosk)
+  const [editedKiosk, setEditedKiosk] = useState({
+    ...kiosk,
+    rotationSpeed: kiosk.rotationSpeed ?? 5,
+  });
+
   const [saving, setSaving] = useState(false)
 
-  const updateField = (field: keyof KioskConfig, value: any) => {
-    setEditedKiosk(prev => ({ ...prev, [field]: value }))
-  }
+  const updateField = (field: string, value: any) => {
+    setEditedKiosk(prev => ({ ...prev, [field]: value }));
+  };
 
   const updateSection = (index: number, field: keyof KioskSection, value: any) => {
     const newSections = [...editedKiosk.sections]
@@ -54,9 +58,11 @@ export function KioskEditor({ kiosk, onSave }: KioskEditorProps) {
   }
 
   const handleSave = async () => {
+    setSaving(true)
     try {
-      setSaving(true)
       await onSave(editedKiosk)
+    } catch (error) {
+      console.error('Error saving kiosk:', error)
     } finally {
       setSaving(false)
     }
@@ -120,6 +126,16 @@ export function KioskEditor({ kiosk, onSave }: KioskEditorProps) {
             <Input
               value={editedKiosk.footerText}
               onChange={e => updateField('footerText', e.target.value)}
+            />
+          </div>
+
+          <div>
+            <label className="text-sm font-medium">Rotation Speed (seconds)</label>
+            <Input
+              type="number"
+              value={editedKiosk.rotationSpeed}
+              onChange={e => updateField('rotationSpeed', parseInt(e.target.value, 10) || 0)}
+              min={1}
             />
           </div>
         </CardContent>

@@ -1,10 +1,12 @@
-import { NextResponse } from 'next/server'
-import { promises as fs } from 'fs'
-import path from 'path'
-
-const dataFilePath = path.join(process.cwd(), 'data', 'kiosks.json')
+import { NextResponse } from 'next/server';
+import { getAllKiosks } from '@/lib/kiosk-storage';
 
 export async function GET() {
-  const fileContents = await fs.readFile(dataFilePath, 'utf8')
-  return NextResponse.json(JSON.parse(fileContents))
+  try {
+    const kiosks = await getAllKiosks();
+    return NextResponse.json(kiosks);
+  } catch (err) {
+    console.error('Error reading kiosks:', err);
+    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
+  }
 } 

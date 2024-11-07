@@ -32,7 +32,7 @@ export function TechDemoKiosk() {
     }, 6000)
 
     return () => clearInterval(timer)
-  }, [])
+  }, [sections.length])
 
   const backgroundWords = ['INNOVATE', 'CONNECT', 'INSPIRE', 'THRIVE']
 

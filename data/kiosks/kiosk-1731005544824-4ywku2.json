@@ -1,0 +1,110 @@
+{
+  "id": "kiosk-1731005544824-4ywku2",
+  "name": "rivertownrag (Imported)",
+  "headerTitle": "INNOVATION LAB",
+  "headerSubtitle": "",
+  "backgroundWords": [
+    "INNOVATE",
+    "INSPIRE",
+    "CONNECT",
+    "THRIVE"
+  ],
+  "mainTitle": "Enhance Customer Engagement with AI Chatbots, Sentiment Analysis, and Phone Agents",
+  "mainDescription": "Explore the capabilities of AI-driven customer service through three interconnected technologies: the Customer-Facing RAG Chatbot, Feedback Sentiment Analysis System, and AI Customer Service Phone Agent. These solutions combine conversational AI, real-time sentiment analysis, and phone-based AI support to streamline interactions, enhance customer experiences, and provide actionable insights to businesses.",
+  "footerText": "",
+  "infoBox1": {
+    "title": "Tech Stack",
+    "content": [
+      "AWS Chatbot",
+      "NVIDIA RTX for Conversational AI",
+      "LangChain",
+      "Python for Natural Language Processing",
+      "NVIDIA ACE Digital Persons"
+    ]
+  },
+  "infoBox2": {
+    "title": "Use Cases",
+    "content": [
+      "Customer Support Automation",
+      "Sentiment Analysis and Insights",
+      "AI-Driven Call Center Support",
+      "Virtual Digital Personalities"
+    ]
+  },
+  "sections": [
+    {
+      "title": "Uses and Benefits of AI Chatbots",
+      "content": [
+        "24/7 Availability: Provide around-the-clock support, ensuring customer issues are addressed promptly without delays.",
+        "Scalable Customer Service: Manage high volumes of customer interactions seamlessly without the need for additional staffing.",
+        "Personalized Responses: Tailor interactions based on user data to enhance engagement and customer loyalty.",
+        "Integration with CRM: Seamless integration with existing CRM systems to deliver customized responses based on customer history."
+      ]
+    },
+    {
+      "title": "Uses and Benefits of Feedback Sentiment Analysis",
+      "content": [
+        "Customer Sentiment Tracking: Analyze conversations to determine customer satisfaction levels and identify potential areas for improvement.",
+        "Real-Time Interaction Insights: Obtain actionable insights from ongoing interactions, helping businesses understand customer needs better.",
+        "Proactive Service Adjustments: Use sentiment analysis to address customer concerns before they escalate, improving overall satisfaction.",
+        "Performance Metrics: Track interaction quality and gather metrics for ongoing process improvement."
+      ]
+    },
+    {
+      "title": "Uses and Benefits of AI Phone Agents",
+      "content": [
+        "Enhanced Customer Service: AI Phone Agents provide real-time customer support through natural language processing, reducing the need for human intervention.",
+        "Cost Reduction: Minimize staffing costs by automating routine inquiries, while reserving human agents for more complex cases.",
+        "Quick Resolution: Improve response times and reduce wait times by automating call handling and routing.",
+        "Personalized Phone Interactions: Use past data and customer history to deliver personalized assistance via phone calls."
+      ]
+    },
+    {
+      "title": "Technologies",
+      "content": [
+        "AWS Chatbot: Cloud-based chatbot services for automated customer interactions.",
+        "NVIDIA RTX for Chat: High-performance acceleration for AI-driven conversational models.",
+        "LangChain & Python: Used for natural language processing, data handling, and chatbot response generation.",
+        "NVIDIA ACE Digital Persons: Enhance conversational interactions through highly realistic, human-like digital personalities."
+      ]
+    },
+    {
+      "title": "Federal Use Cases",
+      "content": [
+        "Public Inquiry Assistance: Provide citizens with accurate information, reducing the workload of human representatives.",
+        "Virtual Assistant for Government Portals: Help users navigate government services efficiently.",
+        "Emergency Response Assistance: AI-driven phone systems to guide callers during emergencies, providing crucial support in real time."
+      ]
+    },
+    {
+      "title": "Commercial Use Cases",
+      "content": [
+        "Retail Customer Support: Address product inquiries, stock checks, and return requests in real-time.",
+        "Healthcare Interaction Support: Provide patients with information on services, appointment scheduling, and medical inquiries instantly.",
+        "Financial Services: Answer common questions related to accounts, transactions, and insurance claims for quicker support.",
+        "E-commerce Support: Engage customers during shopping to provide recommendations, answer questions, and assist with checkout."
+      ]
+    },
+    {
+      "title": "Questions to Start the Conversation - Current State",
+      "content": [
+        "How are you currently handling customer service inquiries?",
+        "What are your biggest communication bottlenecks?",
+        "Where do you see the most delays in responding to requests?",
+        "How much time does your team spend on routine, repetitive questions?",
+        "What percentage of inquiries are basic questions that could be automated?"
+      ]
+    },
+    {
+      "title": "Questions to Start the Conversation - Pain Points and Challenges",
+      "content": [
+        "What challenges do you face in providing consistent customer support?",
+        "Which areas of your customer service would benefit most from automation?",
+        "How often do delays in customer response impact satisfaction?",
+        "Where do you see the biggest bottlenecks in your current phone system?",
+        "What are the most common complaints from your current phone service?"
+      ]
+    }
+  ],
+  "rotationSpeed": 10
+}

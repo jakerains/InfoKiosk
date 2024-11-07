@@ -1,12 +1,12 @@
-# Dynamic Kiosk Display System
+# InfoKiosk
 
-A flexible, multi-screen kiosk display system built with Next.js that allows you to manage and display content across multiple screens with animations and live updates.
+An interactive information display platform built with Next.js. Create and manage dynamic information kiosks for your organization.
 
 ## Features
 
-- Multiple kiosk displays from a single codebase
-- Admin interface for content management
-- Animated content transitions
+- Create and manage multiple kiosks
+- Customizable layouts and content
+- Real-time preview
 - Responsive design
 - Dark mode support
 - Background patterns with custom words
@@ -80,7 +80,9 @@ yarn dev
 │   ├── admin/           # Admin components
 │   └── ui/              # Shared UI components
 ├── data/
-│   └── kiosks.json      # Kiosk configurations
+│   └── kiosks/          # Individual kiosk JSON files
+├── lib/
+│   └── kiosk-storage.ts # Kiosk file operations
 └── types/
     └── kiosk.ts         # TypeScript definitions
 ```
