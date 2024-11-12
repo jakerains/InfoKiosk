@@ -1,0 +1,57 @@
+{
+  "id": "ai-pc-demo",
+  "name": "AI PC Demonstration",
+  "headerTitle": "AI PC INNOVATION",
+  "headerSubtitle": "Experience Next-Gen Computing",
+  "backgroundWords": [
+    "COMPUTE",
+    "INNOVATE",
+    "ANALYZE",
+    "TRANSFORM"
+  ],
+  "mainTitle": "AI PC Demonstration",
+  "mainDescription": "Explore the capabilities of AI-powered PCs at the Innovation Lab. These machines are equipped with advanced NPUs (Neural Processing Units) that allow them to perform complex AI tasks, including computer vision, body tracking, and real-time analytics—all in a compact, accessible setup.",
+  "showPoweredBy": true,
+  "footerText": "Powered by Sterling Innovation",
+  "mainIcon": "Cpu",
+  "infoBox1": {
+    "title": "Tech Stack",
+    "content": [
+      "NVIDIA NPU",
+      "TensorFlow",
+      "PyTorch",
+      "Computer Vision APIs"
+    ]
+  },
+  "infoBox2": {
+    "title": "Applications",
+    "content": [
+      "Body Tracking",
+      "Quality Control",
+      "Real-time Analytics",
+      "Edge Computing"
+    ]
+  },
+  "sections": [
+    {
+      "title": "Real-Time Body Tracking",
+      "content": [
+        "Real-time analysis of human movement and gestures",
+        "Applications in sports, fitness, and rehabilitation",
+        "Highly accurate body tracking through AI-driven vision",
+        "Innovative use cases in interactive experiences"
+      ]
+    },
+    {
+      "title": "Computer Vision for Quality Control",
+      "content": [
+        "Automated visual inspections for defects and anomalies",
+        "Improving accuracy and reducing human error",
+        "Rapid analysis for faster production cycles",
+        "Cost-effective solutions for manufacturing quality assurance"
+      ]
+    }
+  ],
+  "rotationSpeed": 8,
+  "verticalLayout": false
+}

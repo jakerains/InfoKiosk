@@ -1,0 +1,57 @@
+{
+  "id": "digital-personalities",
+  "name": "Digital Personalities Demo",
+  "headerTitle": "DIGITAL PERSONALITIES",
+  "headerSubtitle": "Next-Gen AI Interaction",
+  "backgroundWords": [
+    "ENGAGE",
+    "INTERACT",
+    "LEARN",
+    "ADAPT"
+  ],
+  "mainTitle": "Meet Our Digital Personalities",
+  "mainDescription": "Explore the cutting-edge world of AI-driven digital personalities. These AI avatars bring an engaging, interactive element to the Innovation Lab, providing insights, answering questions, and showcasing advanced conversational capabilities in a fun and approachable way.",
+  "showPoweredBy": true,
+  "footerText": "Powered by Sterling Innovation",
+  "mainIcon": "User",
+  "infoBox1": {
+    "title": "Technologies",
+    "content": [
+      "Natural Language Processing",
+      "Speech Recognition",
+      "Emotion Analysis",
+      "Real-time Response"
+    ]
+  },
+  "infoBox2": {
+    "title": "Use Cases",
+    "content": [
+      "Customer Service",
+      "Virtual Assistants",
+      "Interactive Learning",
+      "Brand Engagement"
+    ]
+  },
+  "sections": [
+    {
+      "title": "Engaging Conversations",
+      "content": [
+        "Interactive AI avatars with personality-driven responses",
+        "Real-time adaptation to user queries and interests",
+        "Engaging, informative, and fun conversations",
+        "Enhanced user interaction with dynamic responses"
+      ]
+    },
+    {
+      "title": "Personalized Information",
+      "content": [
+        "Personalized responses tailored to individual questions",
+        "Detailed insights into technologies and demos in the lab",
+        "Friendly, approachable AI that makes learning enjoyable",
+        "Enhanced customization based on user interaction"
+      ]
+    }
+  ],
+  "rotationSpeed": 10,
+  "verticalLayout": true
+}

@@ -1,0 +1,80 @@
+{
+  "digitalPersonalitiesDemo": {
+    "mainSection": {
+      "title": "Meet Our Digital Personalities",
+      "description": "Explore the cutting-edge world of AI-driven digital personalities. These AI avatars bring an engaging, interactive element to the Innovation Lab, providing insights, answering questions, and showcasing advanced conversational capabilities in a fun and approachable way.",
+      "subSections": [
+        {
+          "title": "What Are Digital Personalities?",
+          "description": "Digital Personalities are AI-driven avatars capable of engaging in natural conversations, offering a blend of informative and entertaining interactions. They are designed to demonstrate the possibilities of conversational AI in both customer service and educational contexts."
+        },
+        {
+          "title": "Purpose and Applications",
+          "description": "These Digital Personalities highlight the potential of AI to humanize interactions, creating memorable customer experiences and providing reliable information in a personalized manner. They can serve in various roles—from friendly tour guides to dedicated customer support agents."
+        }
+      ]
+    },
+    "rotatingSections": [
+      {
+        "title": "Engaging Conversations",
+        "description": "Experience AI avatars that are capable of natural, free-flowing conversations. Learn how AI can be used to create dynamic interactions that adapt to users' inputs in real-time.",
+        "bulletPoints": [
+          "Interactive AI avatars with personality-driven responses.",
+          "Real-time adaptation to user queries and interests.",
+          "Engaging, informative, and fun conversations.",
+          "Enhanced user interaction with dynamic responses."
+        ]
+      },
+      {
+        "title": "Personalized Information",
+        "description": "The AI-driven personalities can provide detailed information about different technologies showcased in the Innovation Lab. See how they can adapt their responses based on user needs.",
+        "bulletPoints": [
+          "Personalized responses tailored to individual questions.",
+          "Detailed insights into technologies and demos in the lab.",
+          "Friendly, approachable AI that makes learning enjoyable.",
+          "Enhanced customization based on user interaction."
+        ]
+      },
+      {
+        "title": "Real-World Use Cases",
+        "description": "Explore how digital personalities can be used in customer service, education, and marketing. See how AI avatars can create an engaging and helpful customer experience.",
+        "bulletPoints": [
+          "AI customer support for personalized assistance.",
+          "Educational avatars for interactive learning environments.",
+          "Brand ambassadors in marketing and promotions.",
+          "Increased engagement through conversational AI."
+        ]
+      },
+      {
+        "title": "Personality Customization",
+        "description": "Learn how digital personalities can be customized to fit specific roles and brand identities. From tone of voice to visual representation, the possibilities are limitless.",
+        "bulletPoints": [
+          "Customizable avatar personalities to fit brand needs.",
+          "Flexible visual representation for targeted experiences.",
+          "Tone, style, and persona adapted for specific use cases.",
+          "Enhanced consistency across brand communications."
+        ]
+      },
+      {
+        "title": "AI-Driven Insights",
+        "description": "These AI avatars can also provide analytics on interactions, tracking the types of questions asked and identifying user preferences to help improve customer experiences.",
+        "bulletPoints": [
+          "Track user interactions for valuable insights.",
+          "Identify common questions and areas of interest.",
+          "Data-driven improvements for enhancing engagement.",
+          "Continuous learning to adapt to user needs."
+        ]
+      },
+      {
+        "title": "Future of Conversational AI",
+        "description": "Get a glimpse into the future of digital personalities and how they will continue to evolve. Discover how advancements in natural language processing are making AI even more human-like.",
+        "bulletPoints": [
+          "Advancements in natural language processing (NLP).",
+          "More natural, human-like conversations with AI.",
+          "Continuous improvement through machine learning.",
+          "Innovations in emotional intelligence and empathy."
+        ]
+      }
+    ]
+  }
+}

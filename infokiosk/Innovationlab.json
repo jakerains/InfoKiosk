@@ -1,0 +1,165 @@
+{
+  "infoScreen": {
+    "mainSection": {
+      "title": "Welcome to the Sterling Innovation Lab",
+      "description": "Discover the future of technology at the Sterling Technology Summit. Our Innovation Lab is divided into three unique sections, each showcasing how cutting-edge AI and machine learning can transform real-world operations and inspire creativity across industries.",
+      "subSections": [
+        {
+          "title": "Explore the Three Sections",
+          "description": "Our lab splits into three experiences:",
+          "details": [
+            {
+              "name": "Purpose-Driven Demo Section",
+              "description": "Featuring Rivertown Ball Company, a fictional case study used to demonstrate how modern AI and technology solutions can drive success in real-world business scenarios. This purpose-driven demo section highlights advancements in product quality, customer engagement, and operational efficiency."
+            },
+            {
+              "name": "Playground",
+              "description": "Engage with our hands-on demos, such as custom ball design tools and interactive AI personalities, showcasing how tech can inspire creativity and customer connection in a fun and interactive way."
+            },
+            {
+              "name": "Partner Innovation Showcase",
+              "description": "Discover innovations from our industry partners that bring world-class AI and technology solutions to life. This section highlights the collaborative efforts that push technology forward and demonstrate the power of partnership."
+            }
+          ]
+        }
+      ]
+    },
+    "rotatingSections": [
+      {
+        "title": "Purpose-Driven Demo: Rivertown Ball Company",
+        "description": "How Rivertown uses AI for quality control, predictive maintenance, and real-time analytics to improve production efficiency.",
+        "bulletPoints": [
+          "AI-powered quality checks ensure consistent product standards.",
+          "Predictive maintenance minimizes equipment downtime.",
+          "Real-time analytics provide actionable insights for efficiency."
+        ]
+      },
+      {
+        "title": "Playground: Interactive Demos",
+        "description": "Experiment with tools like our custom ball designer or interact with digital personalities—AI in a fun, engaging format.",
+        "bulletPoints": [
+          "Custom ball design using AI tools for personalization.",
+          "Interactive digital personalities offering unique experiences.",
+          "Hands-on demonstrations showcasing AI-driven creativity."
+        ]
+      },
+      {
+        "title": "Partner Innovation Showcase",
+        "description": "Learn how our partnerships bring world-class AI and technology solutions to life, powering each demo and pushing the boundaries of innovation.",
+        "bulletPoints": [
+          "Collaborations with industry leaders to drive innovation.",
+          "Cutting-edge technology solutions showcased by partners.",
+          "Partnerships demonstrate real-world applications of AI."
+        ]
+      },
+      {
+        "title": "Key Features and Highlights",
+        "description": "From AI-powered quality checks to voice-enabled customer service, explore how each demo represents the future of business tech.",
+        "bulletPoints": [
+          "AI-powered quality checks ensure top-notch products.",
+          "Voice-enabled customer service enhances user interaction.",
+          "Showcases the future of business technology and innovation."
+        ]
+      },
+      {
+        "title": "AI-Driven Quality Control",
+        "description": "See how automated inspection tools enhance product quality and ensure that every Rivertown ball meets high standards.",
+        "bulletPoints": [
+          "Automated visual inspections reduce defects.",
+          "Consistent product quality using AI-driven analysis.",
+          "Enhanced precision in quality control processes."
+        ]
+      },
+      {
+        "title": "Predictive Maintenance",
+        "description": "Discover how AI predictions help prevent equipment failures, saving time and reducing costs in production.",
+        "bulletPoints": [
+          "AI models predict equipment failure before it happens.",
+          "Reduce unplanned downtime and improve productivity.",
+          "Lower maintenance costs with predictive insights."
+        ]
+      },
+      {
+        "title": "Customer Engagement Tools",
+        "description": "Explore how AI chatbots and digital assistants create seamless customer experiences, improving support and personalization.",
+        "bulletPoints": [
+          "AI chatbots provide 24/7 customer assistance.",
+          "Personalized interactions improve customer satisfaction.",
+          "Digital assistants streamline customer service processes."
+        ]
+      },
+      {
+        "title": "Real-Time Analytics",
+        "description": "Understand how real-time data helps businesses make informed decisions and quickly adapt to changes.",
+        "bulletPoints": [
+          "Real-time dashboards for instant insights.",
+          "Data-driven decision-making enhances business agility.",
+          "Quick response to operational changes with live analytics."
+        ]
+      },
+      {
+        "title": "Custom Ball Design Experience",
+        "description": "Get creative and design your own custom ball, showcasing the flexibility and personalization possible through AI tools.",
+        "bulletPoints": [
+          "Design unique products tailored to personal preferences.",
+          "AI tools assist in creative customization.",
+          "Real-time previews of design options."
+        ]
+      },
+      {
+        "title": "Digital Personalities",
+        "description": "Meet our AI-driven digital personalities that can answer questions and provide insights into the technologies on display.",
+        "bulletPoints": [
+          "Interactive digital personalities for Q&A.",
+          "AI provides detailed insights into featured technologies.",
+          "Engaging and informative user interactions."
+        ]
+      },
+      {
+        "title": "AI Customer Service Agent",
+        "description": "Experience a live demonstration of our voice-enabled customer service agent, providing seamless assistance.",
+        "bulletPoints": [
+          "Voice-enabled AI for natural customer interactions.",
+          "Seamless, real-time customer support capabilities.",
+          "Enhanced user satisfaction with efficient service."
+        ]
+      },
+      {
+        "title": "Edge AI with Jetson Nano",
+        "description": "See how AI can operate at the edge using the Jetson Nano, showcasing the power of on-device intelligence.",
+        "bulletPoints": [
+          "On-device AI processing for faster results.",
+          "Reduced dependency on cloud computing.",
+          "Efficient, low-latency AI applications."
+        ]
+      },
+      {
+        "title": "Robot Dog and LiDAR Scanning",
+        "description": "Watch our robot dog use LiDAR for 3D scanning, highlighting the use of robotics and AI for spatial awareness and mapping.",
+        "bulletPoints": [
+          "Robot dog equipped with LiDAR for 3D mapping.",
+          "AI-driven spatial awareness for precise navigation.",
+          "Demonstrates advanced robotics and sensor integration."
+        ]
+      },
+      {
+        "title": "Foot Traffic Counting",
+        "description": "Learn how our CV-based system counts and analyzes foot traffic at the Innovation Lab in real time.",
+        "bulletPoints": [
+          "Computer vision system for accurate foot traffic analysis.",
+          "Real-time data collection for visitor insights.",
+          "Optimizes space usage and visitor flow."
+        ]
+      },
+      {
+        "title": "AI-Embedded Ray-Ban Glasses",
+        "description": "Interact with Ray-Ban glasses equipped with AI, demonstrating wearable technology and augmented experiences.",
+        "bulletPoints": [
+          "AI-powered smart glasses for augmented experiences.",
+          "Hands-free interaction with wearable technology.",
+          "Enhanced situational awareness and convenience."
+        ]
+      }
+    ]
+  }
+}

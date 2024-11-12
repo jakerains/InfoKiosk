@@ -1,0 +1,57 @@
+{
+  "id": "quality-control",
+  "name": "CV Quality Control",
+  "headerTitle": "QUALITY CONTROL",
+  "headerSubtitle": "AI-Powered Inspection",
+  "backgroundWords": [
+    "INSPECT",
+    "DETECT",
+    "ANALYZE",
+    "IMPROVE"
+  ],
+  "mainTitle": "Computer Vision Quality Control Demo",
+  "mainDescription": "Explore how AI-powered Computer Vision (CV) is revolutionizing quality control in manufacturing. This demo showcases how advanced CV algorithms can inspect products in real-time, ensuring consistent quality and reducing errors in the production process.",
+  "showPoweredBy": true,
+  "footerText": "Powered by Sterling Innovation",
+  "mainIcon": "Eye",
+  "infoBox1": {
+    "title": "Features",
+    "content": [
+      "Real-time Inspection",
+      "Defect Detection",
+      "Quality Metrics",
+      "Process Analytics"
+    ]
+  },
+  "infoBox2": {
+    "title": "Industries",
+    "content": [
+      "Manufacturing",
+      "Electronics",
+      "Automotive",
+      "Consumer Goods"
+    ]
+  },
+  "sections": [
+    {
+      "title": "Real-Time Defect Detection",
+      "content": [
+        "Automatic detection of product defects",
+        "Minimize errors by identifying inconsistencies instantly",
+        "Supports a wide range of products and defect types",
+        "Improves production efficiency with immediate feedback"
+      ]
+    },
+    {
+      "title": "Applications in Manufacturing",
+      "content": [
+        "Automated visual inspections for multiple industries",
+        "Improves the accuracy of quality control",
+        "Reduces the need for manual checks, saving labor costs",
+        "Ideal for electronics, automotive, textiles, and more"
+      ]
+    }
+  ],
+  "rotationSpeed": 10,
+  "verticalLayout": false
+}

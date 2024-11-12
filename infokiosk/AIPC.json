@@ -1,0 +1,80 @@
+{
+  "aiPCsDemo": {
+    "mainSection": {
+      "title": "AI PC Demonstration",
+      "description": "Explore the capabilities of AI-powered PCs at the Innovation Lab. These machines are equipped with advanced NPUs (Neural Processing Units) that allow them to perform complex AI tasks, including computer vision, body tracking, and real-time analytics—all in a compact, accessible setup.",
+      "subSections": [
+        {
+          "title": "What Are AI PCs?",
+          "description": "AI PCs are advanced computing devices that integrate Neural Processing Units (NPUs) to accelerate artificial intelligence workloads. They are designed to perform tasks like real-time data analysis, machine learning, and computer vision, providing powerful capabilities for both developers and end-users."
+        },
+        {
+          "title": "Purpose and Applications",
+          "description": "These AI PCs showcase how advanced computing can be utilized for a variety of applications, from interactive demos to hands-on development. Whether it's for quality inspection, real-time body tracking, or running complex machine learning models, AI PCs bring AI power to your fingertips." 
+        }
+      ]
+    },
+    "rotatingSections": [
+      {
+        "title": "Real-Time Body Tracking",
+        "description": "Discover how AI PCs leverage computer vision to perform real-time body tracking, providing precise insights into movement and posture.",
+        "bulletPoints": [
+          "Real-time analysis of human movement and gestures.",
+          "Applications in sports, fitness, and rehabilitation.",
+          "Highly accurate body tracking through AI-driven vision.",
+          "Innovative use cases in interactive experiences." 
+        ]
+      },
+      {
+        "title": "Computer Vision for Quality Control",
+        "description": "Learn how AI PCs use computer vision to improve quality control processes, ensuring products meet rigorous standards.",
+        "bulletPoints": [
+          "Automated visual inspections for defects and anomalies.",
+          "Improving accuracy and reducing human error.",
+          "Rapid analysis for faster production cycles.",
+          "Cost-effective solutions for manufacturing quality assurance."
+        ]
+      },
+      {
+        "title": "Interactive AI Applications",
+        "description": "Experience how AI PCs enable interactive applications, from smart kiosks to digital assistants, providing dynamic user experiences.",
+        "bulletPoints": [
+          "AI-driven digital assistants for interactive engagement.",
+          "Customizable interfaces that respond to user input.",
+          "Enhancing customer experience with AI personalization.",
+          "Hands-on demos to explore creative uses of AI." 
+        ]
+      },
+      {
+        "title": "Edge AI Capabilities",
+        "description": "Explore the power of Edge AI using compact AI PCs, enabling high-performance AI without relying on cloud connectivity.",
+        "bulletPoints": [
+          "Low-latency AI processing on the device.",
+          "Enhanced privacy by keeping data local.",
+          "Ideal for environments with limited connectivity.",
+          "Applications in IoT, robotics, and real-time analytics."
+        ]
+      },
+      {
+        "title": "AI-Driven Analytics",
+        "description": "These AI PCs can provide real-time analytics, visualizing data to help users make informed decisions quickly.",
+        "bulletPoints": [
+          "Real-time data collection and processing.",
+          "Intuitive dashboards to track key metrics.",
+          "AI-powered insights for immediate decision-making.",
+          "Use cases in retail, healthcare, and manufacturing analytics."
+        ]
+      },
+      {
+        "title": "Future of AI Computing",
+        "description": "Get a look at how AI PCs are evolving, with upcoming advancements in processing power, energy efficiency, and integration.",
+        "bulletPoints": [
+          "Continual improvements in NPU technology.",
+          "Smarter, more efficient AI systems.",
+          "Integration with other smart devices for seamless ecosystems.",
+          "Next-gen AI applications at the edge and beyond."
+        ]
+      }
+    ]
+  }
+}

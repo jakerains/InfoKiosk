@@ -1,0 +1,57 @@
+{
+  "id": "ball-customizer",
+  "name": "Rivertown Ball Customizer",
+  "headerTitle": "BALL CUSTOMIZER",
+  "headerSubtitle": "Design Your Perfect Ball",
+  "backgroundWords": [
+    "DESIGN",
+    "CREATE",
+    "CUSTOMIZE",
+    "PLAY"
+  ],
+  "mainTitle": "Rivertown Ball Customizer",
+  "mainDescription": "Design the custom ball of your dreams with the Rivertown Ball Customizer. Using the latest in Generative AI, this demo allows users to create personalized ball designs, showcasing the capabilities of AI in creative design and customization.",
+  "showPoweredBy": true,
+  "footerText": "Powered by Rivertown Ball Co.",
+  "mainIcon": "Palette",
+  "infoBox1": {
+    "title": "Features",
+    "content": [
+      "Real-time 3D Preview",
+      "Pattern Generation",
+      "Color Customization",
+      "Logo Integration"
+    ]
+  },
+  "infoBox2": {
+    "title": "Technologies",
+    "content": [
+      "Generative AI",
+      "Three.js",
+      "WebGL",
+      "Real-time Rendering"
+    ]
+  },
+  "sections": [
+    {
+      "title": "Create Your Own Design",
+      "content": [
+        "Select from a variety of colors and textures",
+        "Add logos, graphics, and custom patterns",
+        "Real-time preview of your customizations",
+        "User-friendly interface for easy designing"
+      ]
+    },
+    {
+      "title": "Generative AI in Action",
+      "content": [
+        "AI-driven suggestions to enhance your designs",
+        "Instant rendering of custom graphics",
+        "Adaptive learning to match user preferences",
+        "Creativity enhanced with AI-powered features"
+      ]
+    }
+  ],
+  "rotationSpeed": 10,
+  "verticalLayout": false
+}

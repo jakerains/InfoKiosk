@@ -1,0 +1,80 @@
+{
+  "jetsonDemo": {
+    "mainSection": {
+      "title": "AI at the Edge with Jetson",
+      "description": "Experience the power of AI at the edge with NVIDIA Jetson. These compact, energy-efficient devices bring advanced AI capabilities directly to edge applications, enabling real-time data processing, intelligent decision-making, and enhanced device control without relying on cloud connectivity.",
+      "subSections": [
+        {
+          "title": "What is NVIDIA Jetson?",
+          "description": "NVIDIA Jetson is a series of powerful, small-form-factor computers designed to run AI workloads at the edge. By integrating high-performance GPUs and AI software, Jetson delivers on-device intelligence for robotics, industrial automation, smart cities, and more."
+        },
+        {
+          "title": "Purpose and Applications",
+          "description": "The Jetson platform showcases how edge computing can provide AI-driven solutions that are fast, efficient, and capable of real-time decision-making. It's perfect for scenarios where low latency, privacy, and autonomy are crucial." 
+        }
+      ]
+    },
+    "rotatingSections": [
+      {
+        "title": "Edge AI Processing",
+        "description": "Learn how NVIDIA Jetson enables AI processing at the edge, offering real-time decision-making without cloud dependencies.",
+        "bulletPoints": [
+          "On-device AI for faster processing and lower latency.",
+          "Ideal for use in environments with limited connectivity.",
+          "Reduces dependency on cloud infrastructure for real-time tasks.",
+          "Enhanced privacy by keeping data processing local." 
+        ]
+      },
+      {
+        "title": "AI for Robotics",
+        "description": "Discover how Jetson is used to power advanced robotics, enabling intelligent movement, obstacle detection, and autonomous decision-making.",
+        "bulletPoints": [
+          "Real-time object detection and recognition.",
+          "Autonomous navigation and decision-making capabilities.",
+          "Integration with sensors for obstacle detection and avoidance.",
+          "Used in drones, robotic arms, and autonomous vehicles."
+        ]
+      },
+      {
+        "title": "Smart Cameras and Vision Systems",
+        "description": "Explore how Jetson powers smart cameras and vision systems, providing insights for security, monitoring, and industrial automation.",
+        "bulletPoints": [
+          "Real-time video analysis and image recognition.",
+          "Applications in surveillance and industrial monitoring.",
+          "Detection of anomalies in production lines.",
+          "Edge processing for enhanced privacy and speed." 
+        ]
+      },
+      {
+        "title": "AI-Driven Smart Cities",
+        "description": "See how Jetson is used to build smart city solutions, improving infrastructure with AI for traffic management, safety, and energy efficiency.",
+        "bulletPoints": [
+          "Traffic flow analysis and smart signaling.",
+          "Real-time monitoring for safety and security.",
+          "AI-driven analytics for public services optimization.",
+          "Energy management through intelligent street lighting."
+        ]
+      },
+      {
+        "title": "AI for Industrial Automation",
+        "description": "Jetson's capabilities in industrial automation help improve efficiency, safety, and reliability in manufacturing and production settings.",
+        "bulletPoints": [
+          "Predictive maintenance for machinery.",
+          "Real-time quality control with computer vision.",
+          "AI-driven automation for repetitive tasks.",
+          "Reduction of downtime through smart analytics."
+        ]
+      },
+      {
+        "title": "Future of Edge AI with Jetson",
+        "description": "Get a glimpse into the future of edge computing with NVIDIA Jetson, where advancements in hardware and software will continue to push the boundaries of what's possible at the edge.",
+        "bulletPoints": [
+          "Smaller, more powerful AI edge devices.",
+          "Improved energy efficiency for longer deployments.",
+          "Integration with 5G for faster data processing.",
+          "New use cases in healthcare, retail, and environmental monitoring."
+        ]
+      }
+    ]
+  }
+}

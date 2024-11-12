@@ -1,0 +1,80 @@
+{
+  "peopleCounterDemo": {
+    "mainSection": {
+      "title": "AI-Powered People Counter",
+      "description": "Experience the effectiveness of our AI-powered people counting system, designed to provide accurate real-time insights into visitor traffic. Using advanced computer vision and AI algorithms, this system is capable of counting individuals as they enter or exit an area, providing valuable data for a range of applications.",
+      "subSections": [
+        {
+          "title": "What is the People Counter?",
+          "description": "The AI-Powered People Counter uses computer vision technology to detect and count individuals in real-time. It is designed for use in public spaces, retail stores, events, and any environment where understanding foot traffic can provide operational or business insights."
+        },
+        {
+          "title": "Purpose and Applications",
+          "description": "This people counter system provides actionable data that can be used to optimize resources, improve safety, and better understand visitor patterns. It's ideal for managing occupancy, gathering visitor statistics, and analyzing peak times." 
+        }
+      ]
+    },
+    "rotatingSections": [
+      {
+        "title": "Real-Time Visitor Counting",
+        "description": "Learn how the people counter system uses AI to count individuals entering or exiting an area in real time, ensuring accuracy and efficiency.",
+        "bulletPoints": [
+          "Accurate real-time counting of visitors.",
+          "Uses computer vision for precise detection.",
+          "Ideal for monitoring entrances and exits.",
+          "Ensures accurate data even during peak hours."
+        ]
+      },
+      {
+        "title": "Applications in Retail",
+        "description": "Discover how the people counter system can benefit retail environments, helping store managers understand visitor patterns and optimize staff deployment.",
+        "bulletPoints": [
+          "Understand customer flow and peak hours.",
+          "Optimize staffing based on visitor traffic.",
+          "Measure the impact of promotions and events.",
+          "Improve store layout based on visitor behavior." 
+        ]
+      },
+      {
+        "title": "Occupancy Management",
+        "description": "Explore how this system can be used to manage occupancy in real-time, ensuring safety and compliance with regulations in crowded spaces.",
+        "bulletPoints": [
+          "Real-time occupancy monitoring for safety.",
+          "Helps comply with building and health regulations.",
+          "Automated alerts when occupancy limits are reached.",
+          "Ideal for event venues, public buildings, and offices." 
+        ]
+      },
+      {
+        "title": "Data-Driven Insights",
+        "description": "See how the AI people counter provides valuable insights into visitor behavior, helping businesses and organizations make data-driven decisions.",
+        "bulletPoints": [
+          "Track visitor trends over time.",
+          "Analyze data to optimize operations.",
+          "Visualize foot traffic patterns with easy-to-understand dashboards.",
+          "Identify peak periods for better resource allocation." 
+        ]
+      },
+      {
+        "title": "Applications in Safety and Security",
+        "description": "Learn how the people counter can assist in safety and security, by monitoring crowd density and providing alerts in case of unusual activity.",
+        "bulletPoints": [
+          "Monitor crowd density in real-time.",
+          "Automated alerts for overcrowding.",
+          "Supports security personnel in maintaining safe conditions.",
+          "Useful in stadiums, transportation hubs, and public events." 
+        ]
+      },
+      {
+        "title": "Future of AI-Driven People Counting",
+        "description": "Get a look into the future of people counting technology, where advancements in AI and sensor integration will provide even more comprehensive insights.",
+        "bulletPoints": [
+          "Integration with other smart building technologies.",
+          "Enhanced detection accuracy with advanced sensors.",
+          "Predictive analytics for visitor pattern forecasting.",
+          "Applications in smart cities and automated facilities." 
+        ]
+      }
+    ]
+  }
+}

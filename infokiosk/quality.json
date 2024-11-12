@@ -1,0 +1,70 @@
+{
+  "cvQualityDemo": {
+    "mainSection": {
+      "title": "Computer Vision Quality Control Demo",
+      "description": "Explore how AI-powered Computer Vision (CV) is revolutionizing quality control in manufacturing. This demo showcases how advanced CV algorithms can inspect products in real-time, ensuring consistent quality and reducing errors in the production process.",
+      "subSections": [
+        {
+          "title": "What is the CV Quality Control System?",
+          "description": "The CV Quality Control System uses computer vision to analyze products during manufacturing, automatically identifying defects and ensuring each product meets the required standards. By leveraging AI, the system provides rapid, reliable quality assessment without human intervention."
+        },
+        {
+          "title": "Purpose and Applications",
+          "description": "The purpose of this demo is to show how AI can be used to improve the consistency and efficiency of manufacturing processes. By automating quality checks, businesses can minimize human error, reduce waste, and ensure that customers receive high-quality products." 
+        }
+      ]
+    },
+    "rotatingSections": [
+      {
+        "title": "Real-Time Defect Detection",
+        "description": "Discover how AI-driven computer vision identifies defects in real-time, ensuring each product meets quality standards before leaving the production line.",
+        "bulletPoints": [
+          "Automatic detection of product defects.",
+          "Minimize errors by identifying inconsistencies instantly.",
+          "Supports a wide range of products and defect types.",
+          "Improves production efficiency with immediate feedback." 
+        ]
+      },
+      {
+        "title": "Applications in Manufacturing",
+        "description": "Learn how computer vision technology can be applied across various manufacturing industries to maintain consistent product quality.",
+        "bulletPoints": [
+          "Automated visual inspections for multiple industries.",
+          "Improves the accuracy of quality control.",
+          "Reduces the need for manual checks, saving labor costs.",
+          "Ideal for electronics, automotive, textiles, and more." 
+        ]
+      },
+      {
+        "title": "Data-Driven Quality Insights",
+        "description": "See how data from the CV system can provide valuable insights into the production process, helping manufacturers make informed improvements.",
+        "bulletPoints": [
+          "Analyze defect patterns to improve production.",
+          "Generate reports on quality control performance.",
+          "Identify trends and recurring issues in the production line.",
+          "Support continuous process optimization with actionable data." 
+        ]
+      },
+      {
+        "title": "Reducing Waste and Cost Savings",
+        "description": "Understand how real-time quality control can help reduce waste by catching defects early, thereby minimizing costs and improving overall yield.",
+        "bulletPoints": [
+          "Early defect detection reduces material waste.",
+          "Optimize resource usage by minimizing flawed outputs.",
+          "Lower production costs by reducing manual inspection needs.",
+          "Boost profitability by improving product yield." 
+        ]
+      },
+      {
+        "title": "Future of AI in Quality Control",
+        "description": "Get a glimpse into the future of quality control with AI, where advanced computer vision and machine learning models will further enhance manufacturing accuracy.",
+        "bulletPoints": [
+          "Integration with robotics for automated corrective actions.",
+          "Advanced defect prediction using machine learning.",
+          "Improved customization of quality standards per product line.",
+          "Real-time collaboration between AI and human inspectors." 
+        ]
+      }
+    ]
+  }
+}

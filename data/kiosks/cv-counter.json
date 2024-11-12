@@ -1,0 +1,57 @@
+{
+  "id": "cv-counter",
+  "name": "AI People Counter",
+  "headerTitle": "PEOPLE COUNTER",
+  "headerSubtitle": "Real-Time Visitor Analytics",
+  "backgroundWords": [
+    "COUNT",
+    "ANALYZE",
+    "MONITOR",
+    "OPTIMIZE"
+  ],
+  "mainTitle": "AI-Powered People Counter",
+  "mainDescription": "Experience the effectiveness of our AI-powered people counting system, designed to provide accurate real-time insights into visitor traffic. Using advanced computer vision and AI algorithms, this system is capable of counting individuals as they enter or exit an area, providing valuable data for a range of applications.",
+  "showPoweredBy": true,
+  "footerText": "Powered by Sterling Innovation",
+  "mainIcon": "Users",
+  "infoBox1": {
+    "title": "Features",
+    "content": [
+      "Real-time Counting",
+      "Analytics Dashboard",
+      "Occupancy Tracking",
+      "Alert System"
+    ]
+  },
+  "infoBox2": {
+    "title": "Applications",
+    "content": [
+      "Retail Analytics",
+      "Venue Management",
+      "Safety Compliance",
+      "Traffic Analysis"
+    ]
+  },
+  "sections": [
+    {
+      "title": "Real-Time Visitor Counting",
+      "content": [
+        "Accurate real-time counting of visitors",
+        "Uses computer vision for precise detection",
+        "Ideal for monitoring entrances and exits",
+        "Ensures accurate data even during peak hours"
+      ]
+    },
+    {
+      "title": "Applications in Retail",
+      "content": [
+        "Understand customer flow and peak hours",
+        "Optimize staffing based on visitor traffic",
+        "Measure the impact of promotions and events",
+        "Improve store layout based on visitor behavior"
+      ]
+    }
+  ],
+  "rotationSpeed": 8,
+  "verticalLayout": true
+}

@@ -1,0 +1,70 @@
+{
+  "rivertownBallCustomizerDemo": {
+    "mainSection": {
+      "title": "Rivertown Ball Customizer",
+      "description": "Design the custom ball of your dreams with the Rivertown Ball Customizer. Using the latest in Generative AI, this demo allows users to create personalized ball designs, showcasing the capabilities of AI in creative design and customization.",
+      "subSections": [
+        {
+          "title": "What is the Rivertown Ball Customizer?",
+          "description": "The Rivertown Ball Customizer is a Generative AI-powered tool that allows users to create unique and personalized ball designs. By leveraging AI, users can select colors, patterns, and graphics, and see their ideas come to life instantly."
+        },
+        {
+          "title": "Purpose and Applications",
+          "description": "The customizer highlights how Generative AI can be used in creative industries for personalization and user engagement. It serves as an example of how AI can empower customers to create products tailored to their tastes, enhancing both experience and satisfaction." 
+        }
+      ]
+    },
+    "rotatingSections": [
+      {
+        "title": "Create Your Own Design",
+        "description": "Explore the customization features that allow you to design your own ball, from colors and textures to logos and patterns.",
+        "bulletPoints": [
+          "Select from a variety of colors and textures.",
+          "Add logos, graphics, and custom patterns.",
+          "Real-time preview of your customizations.",
+          "User-friendly interface for easy designing." 
+        ]
+      },
+      {
+        "title": "Generative AI in Action",
+        "description": "Discover how Generative AI is used to enable real-time creative design, bringing your custom ball to life with minimal effort.",
+        "bulletPoints": [
+          "AI-driven suggestions to enhance your designs.",
+          "Instant rendering of custom graphics.",
+          "Adaptive learning to match user preferences.",
+          "Creativity enhanced with AI-powered features." 
+        ]
+      },
+      {
+        "title": "Applications in Retail and Marketing",
+        "description": "See how the Rivertown Ball Customizer can be applied in retail to enhance customer engagement and brand personalization.",
+        "bulletPoints": [
+          "Boost customer engagement through personalization.",
+          "Allow customers to create branded products.",
+          "Great for promotions, events, and custom merchandise.",
+          "Enhance the shopping experience with interactive tools." 
+        ]
+      },
+      {
+        "title": "User Experience and Feedback",
+        "description": "Learn how the customization process collects feedback and adapts to user preferences for a more personalized experience.",
+        "bulletPoints": [
+          "Adaptive UI based on user interactions.",
+          "Collects user feedback for iterative improvement.",
+          "Personalized suggestions based on previous designs.",
+          "Continuous learning to improve user satisfaction." 
+        ]
+      },
+      {
+        "title": "Future of Custom Product Design",
+        "description": "Explore the future potential of Generative AI in product customization and how it could transform industries beyond sports equipment.",
+        "bulletPoints": [
+          "Expanding customization options to apparel and accessories.",
+          "AI-driven personalization across multiple product categories.",
+          "Real-time collaboration between designers and customers.",
+          "Revolutionizing the concept of bespoke products with AI." 
+        ]
+      }
+    ]
+  }
+}

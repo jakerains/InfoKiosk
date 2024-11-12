@@ -1,0 +1,57 @@
+{
+  "id": "jetson-demo",
+  "name": "Edge AI with Jetson",
+  "headerTitle": "EDGE AI COMPUTING",
+  "headerSubtitle": "Powered by NVIDIA Jetson",
+  "backgroundWords": [
+    "EDGE",
+    "COMPUTE",
+    "PROCESS",
+    "ANALYZE"
+  ],
+  "mainTitle": "AI at the Edge with Jetson",
+  "mainDescription": "Experience the power of AI at the edge with NVIDIA Jetson. These compact, energy-efficient devices bring advanced AI capabilities directly to edge applications, enabling real-time data processing, intelligent decision-making, and enhanced device control without relying on cloud connectivity.",
+  "showPoweredBy": true,
+  "footerText": "Powered by NVIDIA Jetson",
+  "mainIcon": "Chip",
+  "infoBox1": {
+    "title": "Tech Stack",
+    "content": [
+      "NVIDIA Jetson",
+      "CUDA",
+      "TensorRT",
+      "DeepStream SDK"
+    ]
+  },
+  "infoBox2": {
+    "title": "Applications",
+    "content": [
+      "Edge AI",
+      "Robotics",
+      "Smart Cameras",
+      "Industrial IoT"
+    ]
+  },
+  "sections": [
+    {
+      "title": "Edge AI Processing",
+      "content": [
+        "On-device AI for faster processing and lower latency",
+        "Ideal for use in environments with limited connectivity",
+        "Reduces dependency on cloud infrastructure for real-time tasks",
+        "Enhanced privacy by keeping data processing local"
+      ]
+    },
+    {
+      "title": "AI for Robotics",
+      "content": [
+        "Real-time object detection and recognition",
+        "Autonomous navigation and decision-making capabilities",
+        "Integration with sensors for obstacle detection and avoidance",
+        "Used in drones, robotic arms, and autonomous vehicles"
+      ]
+    }
+  ],
+  "rotationSpeed": 8,
+  "verticalLayout": true
+}

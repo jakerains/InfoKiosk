@@ -1,0 +1,54 @@
+{
+  "id": "innovation-lab",
+  "name": "Sterling Innovation Lab",
+  "headerTitle": "INNOVATION LAB",
+  "headerSubtitle": "Discover the Future of Technology",
+  "backgroundWords": [
+    "INNOVATE",
+    "DISCOVER",
+    "CREATE",
+    "TRANSFORM"
+  ],
+  "mainTitle": "Welcome to the Sterling Innovation Lab",
+  "mainDescription": "Discover the future of technology at the Sterling Technology Summit. Our Innovation Lab is divided into three unique sections, each showcasing how cutting-edge AI and machine learning can transform real-world operations and inspire creativity across industries.",
+  "showPoweredBy": true,
+  "footerText": "Powered by Sterling Innovation",
+  "mainIcon": "Lab",
+  "infoBox1": {
+    "title": "Lab Sections",
+    "content": [
+      "Purpose-Driven Demos",
+      "Interactive Playground",
+      "Partner Showcase"
+    ]
+  },
+  "infoBox2": {
+    "title": "Technologies",
+    "content": [
+      "Artificial Intelligence",
+      "Computer Vision",
+      "Edge Computing",
+      "Digital Personalities"
+    ]
+  },
+  "sections": [
+    {
+      "title": "Purpose-Driven Demo: Rivertown Ball Company",
+      "content": [
+        "AI-powered quality checks ensure consistent product standards",
+        "Predictive maintenance minimizes equipment downtime",
+        "Real-time analytics provide actionable insights for efficiency"
+      ]
+    },
+    {
+      "title": "Playground: Interactive Demos",
+      "content": [
+        "Custom ball design using AI tools for personalization",
+        "Interactive digital personalities offering unique experiences",
+        "Hands-on demonstrations showcasing AI-driven creativity"
+      ]
+    }
+  ],
+  "rotationSpeed": 12,
+  "verticalLayout": false
+}

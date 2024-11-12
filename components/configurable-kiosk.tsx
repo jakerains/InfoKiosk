@@ -75,8 +75,9 @@ export function ConfigurableKiosk({ kioskId }: ConfigurableKioskProps) {
               left: `${25 * index}%`,
               transform: 'rotate(-45deg)',
               color: 'transparent',
-              WebkitTextStroke: '1px',
-              WebkitTextStrokeImage: 'linear-gradient(45deg, #47ebb3, #eb4747)',
+              WebkitTextStroke: '1px #47ebb3',
+              background: 'linear-gradient(45deg, #47ebb3, #eb4747)',
+              WebkitBackgroundClip: 'text',
             }}
           >
             {word}

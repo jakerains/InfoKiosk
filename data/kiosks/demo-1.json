@@ -1,17 +1,19 @@
 {
   "id": "demo-1",
-  "name": "AI Vision quality control",
+  "name": "AI Innovation Lab",
   "headerTitle": "INNOVATION LAB",
   "headerSubtitle": "",
   "backgroundWords": [
     "INNOVATE",
-    "CONNECT",
     "INSPIRE",
+    "CONNECT",
     "THRIVE"
   ],
-  "mainTitle": "Enhance Quality Control with AI Vision",
-  "mainDescription": "Leverage advanced computer vision to automate defect detection, quality control, and supply chain optimization across industries. By implementing real-time visual inspection and AI-driven analytics, organizations can enhance quality assurance, streamline processes, and reduce human error in manufacturing and logistics. This solution ensures that every product meets the highest standards while improving operational efficiency.",
-  "footerText": "",
+  "mainTitle": "Build with cutting-edge technology",
+  "mainDescription": "Experience the power of our latest innovations in AI and machine learning.",
+  "showPoweredBy": true,
+  "footerText": "Powered by GenAIJake",
+  "mainIcon": "Cpu",
   "infoBox1": {
     "title": "Tech Stack",
     "content": [
@@ -29,67 +31,7 @@
       "Predictive Analytics"
     ]
   },
-  "sections": [
-    {
-      "title": "Uses and Benefits of Computer Vision",
-      "content": [
-        "Predictive Maintenance: Uses machine-learning algorithms to detect early signs of equipment wear or malfunction by processing visual data, allowing you to anticipate and prevent failures.",
-        "Quality Control and Inspection: AI and image processing automatically detect defects and deviations from specifications, ensuring product quality.",
-        "Supply Chain Optimization: AI enhances visibility, accuracy, and efficiency throughout the supply chain process, reducing bottlenecks and improving performance."
-      ]
-    },
-    {
-      "title": "Uses and Benefits of Computer Vision",
-      "content": [
-        "Safety and Security: Image and video analysis enhance protection, enabling more effective surveillance and access control, helping reduce incidents.",
-        "Predictive Analytics: Combines image processing with machine learning to forecast future outcomes, supporting proactive decision-making.",
-        "Data Insights: Extract actionable intelligence from visual data, helping uncover hidden insights and support data-driven decisions."
-      ]
-    },
-    {
-      "title": "Technologies",
-      "content": [
-        "NVIDIA NEMO: Powers high-speed processing for real-time visual analytics.",
-        "ROBOFLOW: Assists in data labeling, model training, and vision AI deployment.",
-        "Chooch AI, IronYUN, NVIDIA DeepStream, NVIDIA Holoscan, NVIDIA Omniverse: Enhance visual analysis, pattern recognition, and actionable data extraction."
-      ]
-    },
-    {
-      "title": "Federal Use Cases",
-      "content": [
-        "Defense: Aerial reconnaissance, object recognition, perimeter security, and maintenance inspection.",
-        "Transportation (DOT, FAA): Traffic monitoring, license plate recognition, railway track inspection, and drone detection.",
-        "Law Enforcement and Security (FBI, DHS): Facial recognition, video analytics, crowd monitoring, and border surveillance."
-      ]
-    },
-    {
-      "title": "Commercial Use Cases",
-      "content": [
-        "Retail Operations: Self-checkout systems and inventory monitoring.",
-        "Manufacturing and Quality Control: Automated part verification and process optimization.",
-        "Warehouse and Logistics: Inventory management, fleet monitoring, and efficient order processing.",
-        "Healthcare: Equipment tracking, disease screening, and public health surveillance."
-      ]
-    },
-    {
-      "title": "Questions to Start the Conversation - Current State",
-      "content": [
-        "What are the most time-consuming visual inspection tasks in your operations?",
-        "Which processes currently rely heavily on human verification or decision-making?",
-        "How are you currently collecting and analyzing visual data?",
-        "Where do you see the most errors in visual inspections?"
-      ]
-    },
-    {
-      "title": "Questions to Start the Conversation - Pain Points and Challenges",
-      "content": [
-        "What challenges do you face with maintaining consistency in inspections?",
-        "Which parts of your operations would benefit most from 24/7 monitoring?",
-        "What compliance issues could be better addressed with automated monitoring?",
-        "  How much time does your team spend on manual inspections, and what is the impact on productivity?"
-      ]
-    }
-  ],
-  "rotationSpeed": 10,
-  "verticalLayout": true
+  "sections": [],
+  "verticalLayout": false,
+  "rotationSpeed": 5
 }
