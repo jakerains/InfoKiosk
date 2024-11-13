@@ -581,6 +581,90 @@ const initialKioskData = {
     ],
     "rotationSpeed": 6,
     "verticalLayout": false
+  },
+  "rivertown-chatbot": {
+    "id": "rivertown-chatbot",
+    "name": "Rivertown Chatbot Demo",
+    "headerTitle": "RIVERTOWN CHATBOT",
+    "headerSubtitle": "AI-Powered Customer Service",
+    "backgroundWords": [
+      "ENGAGE",
+      "ASSIST",
+      "ANALYZE",
+      "CONNECT"
+    ],
+    "mainTitle": "Rivertown Chatbot with Blaand Integration and Analytics Demo",
+    "mainDescription": "Explore how the Rivertown Chatbot leverages AI to provide seamless customer service, integrate real-time voice interactions through Blaand, and deliver actionable insights via analytics. This demo highlights the combined power of conversational AI, voice integration, and comprehensive analytics for an enhanced customer experience. The Rivertown Chatbot is an AI-driven conversational assistant that helps customers navigate services, provide personalized responses, and streamline interactions.",
+    "showPoweredBy": true,
+    "footerText": "Powered by Sterling Innovation Lab",
+    "mainIcon": "MessageSquare",
+    "infoBox1": {
+      "title": "Key Features",
+      "content": [
+        "Natural Language Processing",
+        "Voice Integration",
+        "Real-time Analytics",
+        "Multi-channel Support"
+      ]
+    },
+    "infoBox2": {
+      "title": "Applications",
+      "content": [
+        "Customer Service",
+        "Sales Support",
+        "Technical Assistance",
+        "Service Analytics"
+      ]
+    },
+    "sections": [
+      {
+        "title": "Conversational AI Features",
+        "content": [
+          "Natural language understanding for seamless conversations",
+          "Personalized responses based on customer history",
+          "Escalation paths to live agents for complex issues",
+          "Multi-language support for a diverse customer base"
+        ]
+      },
+      {
+        "title": "Blaand Voice Integration",
+        "content": [
+          "Voice-enabled calls for real-time customer support",
+          "Smooth transition between chat and voice interactions",
+          "Increased customer satisfaction with natural, conversational voice support",
+          "Hands-free interaction for on-the-go assistance"
+        ]
+      },
+      {
+        "title": "Real-Time Analytics",
+        "content": [
+          "Real-time sentiment analysis to gauge customer satisfaction",
+          "Dashboard views for interaction metrics and trends",
+          "Insights into common customer issues to drive product improvements",
+          "Customized reporting for business-specific KPIs"
+        ]
+      },
+      {
+        "title": "Omnichannel Customer Experience",
+        "content": [
+          "Integration of chat and voice for seamless support",
+          "Consistent customer experience across channels",
+          "Automated follow-ups based on previous interactions",
+          "Customer journey tracking for personalized service"
+        ]
+      },
+      {
+        "title": "Future of AI-Driven Customer Engagement",
+        "content": [
+          "Improved AI models for more intuitive conversations",
+          "Integration with more IoT devices for voice-enabled support",
+          "Advanced predictive analytics for proactive engagement",
+          "Personalized marketing and service recommendations"
+        ]
+      }
+    ],
+    "rotationSpeed": 7,
+    "verticalLayout": false
   }
 }
 
