@@ -1,0 +1,67 @@
+{
+  "id": "meta-rayban",
+  "name": "Meta Ray-Ban Smart Glasses Demo",
+  "headerTitle": "META RAY-BAN DEMO",
+  "headerSubtitle": "AI-Powered Smart Eyewear",
+  "backgroundWords": [
+    "AUGMENT",
+    "CONNECT",
+    "ASSIST",
+    "ENHANCE"
+  ],
+  "mainTitle": "Meta Ray-Ban Glasses with Embedded AI Demo",
+  "mainDescription": "Discover how wearable technology is revolutionizing the way we interact with the world around us. The Meta Ray-Ban glasses, equipped with embedded AI, provide an augmented experience by combining smart technology with everyday eyewear. This demo showcases the potential of these smart glasses to enhance situational awareness, provide instant information, and enable hands-free interaction. With built-in AI, these glasses can provide real-time assistance, audio guidance, and augmented information overlays, creating a hands-free and connected experience.",
+  "showPoweredBy": true,
+  "footerText": "Powered by Sterling Innovation Lab",
+  "mainIcon": "Glasses",
+  "infoBox1": {
+    "title": "Key Features",
+    "content": [
+      "AR Overlays",
+      "Voice Commands",
+      "Gesture Control",
+      "Real-time Translation"
+    ]
+  },
+  "infoBox2": {
+    "title": "Applications",
+    "content": [
+      "Navigation Assistance",
+      "Health Monitoring",
+      "Language Translation",
+      "Hands-free Computing"
+    ]
+  },
+  "sections": [
+    {
+      "title": "AR Overlays",
+      "content": [
+        "Augmented reality overlays for enhanced situational awareness",
+        "Used in navigation, health monitoring, and language translation"
+      ]
+    },
+    {
+      "title": "Voice Commands",
+      "content": [
+        "Voice commands for hands-free interaction",
+        "Used in navigation, health monitoring, and language translation"
+      ]
+    },
+    {
+      "title": "Gesture Control",
+      "content": [
+        "Gesture control for hands-free interaction",
+        "Used in navigation, health monitoring, and language translation"
+      ]
+    },
+    {
+      "title": "Real-time Translation",
+      "content": [
+        "Real-time translation for language translation",
+        "Used in navigation, health monitoring, and language translation"
+      ]
+    }
+  ],
+  "rotationSpeed": 6,
+  "verticalLayout": false
+}

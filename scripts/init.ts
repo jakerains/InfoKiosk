@@ -455,6 +455,132 @@ const initialKioskData = {
     ],
     "rotationSpeed": 5,
     "verticalLayout": false
+  },
+  "robot-dog": {
+    "id": "robot-dog",
+    "name": "Robot Dog and LiDAR Scanning Demo",
+    "headerTitle": "ROBOT DOG DEMO",
+    "headerSubtitle": "Advanced Robotics & LiDAR Technology",
+    "backgroundWords": ["SCAN", "NAVIGATE", "MAP", "EXPLORE"],
+    "mainTitle": "Robot Dog and LiDAR Scanning Demo",
+    "mainDescription": "Explore the potential of robotics and AI through our Robot Dog equipped with LiDAR for 3D scanning. This demo showcases how cutting-edge robotics can enhance spatial awareness and mapping capabilities, paving the way for innovative applications in various industries. The Robot Dog is an advanced AI-powered robot equipped with LiDAR sensors to scan its surroundings in 3D, enabling precise mapping and spatial understanding for autonomous navigation and environmental assessment.",
+    "showPoweredBy": true,
+    "footerText": "Powered by Sterling Innovation Lab",
+    "mainIcon": "Robot",
+    "infoBox1": {
+      "title": "Core Technologies",
+      "content": [
+        "LiDAR Scanning",
+        "AI Navigation",
+        "Robotics",
+        "3D Mapping"
+      ]
+    },
+    "infoBox2": {
+      "title": "Applications",
+      "content": [
+        "Construction Monitoring",
+        "Disaster Response",
+        "Security Patrols",
+        "Environmental Mapping"
+      ]
+    },
+    "sections": [
+      {
+        "title": "LiDAR Scanning",
+        "content": [
+          "3D scanning of environments for precise mapping",
+          "High-resolution 3D data for accurate spatial understanding",
+          "Used in construction, disaster response, and environmental mapping"
+        ]
+      },
+      {
+        "title": "AI Navigation",
+        "content": [
+          "Autonomous navigation using AI algorithms",
+          "Real-time obstacle detection and avoidance",
+          "Used in drones, robotic arms, and autonomous vehicles"
+        ]
+      },
+      {
+        "title": "Robotics",
+        "content": [
+          "Advanced AI-powered robots for various applications",
+          "Used in construction, disaster response, and environmental mapping"
+        ]
+      },
+      {
+        "title": "3D Mapping",
+        "content": [
+          "Mapping of environments using 3D data",
+          "Used in construction, disaster response, and environmental mapping"
+        ]
+      }
+    ],
+    "rotationSpeed": 8,
+    "verticalLayout": false
+  },
+  "meta-rayban": {
+    "id": "meta-rayban",
+    "name": "Meta Ray-Ban Smart Glasses Demo",
+    "headerTitle": "META RAY-BAN DEMO",
+    "headerSubtitle": "AI-Powered Smart Eyewear",
+    "backgroundWords": ["AUGMENT", "CONNECT", "ASSIST", "ENHANCE"],
+    "mainTitle": "Meta Ray-Ban Glasses with Embedded AI Demo",
+    "mainDescription": "Discover how wearable technology is revolutionizing the way we interact with the world around us. The Meta Ray-Ban glasses, equipped with embedded AI, provide an augmented experience by combining smart technology with everyday eyewear. This demo showcases the potential of these smart glasses to enhance situational awareness, provide instant information, and enable hands-free interaction. With built-in AI, these glasses can provide real-time assistance, audio guidance, and augmented information overlays, creating a hands-free and connected experience.",
+    "showPoweredBy": true,
+    "footerText": "Powered by Sterling Innovation Lab",
+    "mainIcon": "Glasses",
+    "infoBox1": {
+      "title": "Key Features",
+      "content": [
+        "AR Overlays",
+        "Voice Commands",
+        "Gesture Control",
+        "Real-time Translation"
+      ]
+    },
+    "infoBox2": {
+      "title": "Applications",
+      "content": [
+        "Navigation Assistance",
+        "Health Monitoring",
+        "Language Translation",
+        "Hands-free Computing"
+      ]
+    },
+    "sections": [
+      {
+        "title": "AR Overlays",
+        "content": [
+          "Augmented reality overlays for enhanced situational awareness",
+          "Used in navigation, health monitoring, and language translation"
+        ]
+      },
+      {
+        "title": "Voice Commands",
+        "content": [
+          "Voice commands for hands-free interaction",
+          "Used in navigation, health monitoring, and language translation"
+        ]
+      },
+      {
+        "title": "Gesture Control",
+        "content": [
+          "Gesture control for hands-free interaction",
+          "Used in navigation, health monitoring, and language translation"
+        ]
+      },
+      {
+        "title": "Real-time Translation",
+        "content": [
+          "Real-time translation for language translation",
+          "Used in navigation, health monitoring, and language translation"
+        ]
+      }
+    ],
+    "rotationSpeed": 6,
+    "verticalLayout": false
   }
 }
 
