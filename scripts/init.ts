@@ -386,41 +386,99 @@ const initialKioskData = {
     ],
     "rotationSpeed": 10,
     "verticalLayout": false
+  },
+  "cv-person-counter": {
+    "id": "cv-person-counter",
+    "name": "Sterling CV Person Counter Demo",
+    "headerTitle": "CV PERSON COUNTER DEMO",
+    "headerSubtitle": "Real-time Foot Traffic Analytics",
+    "backgroundWords": ["MONITOR", "ANALYZE", "TRACK", "OPTIMIZE"],
+    "mainTitle": "Real-Time Foot Traffic Counting",
+    "mainDescription": "Discover how Sterling's computer vision technology counts and analyzes foot traffic in real time, offering actionable insights into visitor behavior and space optimization. Our computer vision-based person counter leverages AI to provide real-time insights into foot traffic, helping businesses optimize their physical spaces by understanding visitor patterns and behavior.",
+    "showPoweredBy": true,
+    "footerText": "Powered by Sterling Innovation Lab",
+    "mainIcon": "Eye",
+    "infoBox1": {
+      "title": "Technology Stack",
+      "content": [
+        "OpenCV",
+        "Python",
+        "TensorFlow",
+        "NVIDIA Jetson Nano"
+      ]
+    },
+    "infoBox2": {
+      "title": "Use Cases",
+      "content": [
+        "Retail Store Visitor Analytics",
+        "Event Space Occupancy Monitoring",
+        "Workspace Foot Traffic Optimization"
+      ]
+    },
+    "sections": [
+      {
+        "title": "Real-Time Visitor Counting",
+        "content": [
+          "AI-based detection for accurate headcounts",
+          "Differentiates between individuals for precision",
+          "Real-time reporting of entry and exit data",
+          "Advanced tracking algorithms for reliable counting"
+        ]
+      },
+      {
+        "title": "Foot Traffic Heatmaps",
+        "content": [
+          "Visualize high-traffic areas within the monitored space",
+          "Use data to improve layout and optimize space usage",
+          "Identify underutilized areas for better management",
+          "Generate detailed heatmaps for spatial analysis"
+        ]
+      },
+      {
+        "title": "Occupancy Monitoring",
+        "content": [
+          "Real-time monitoring of room or space occupancy",
+          "Ensure compliance with safety regulations",
+          "Optimize staffing and resources based on occupancy data",
+          "Automated alerts for occupancy thresholds"
+        ]
+      },
+      {
+        "title": "Actionable Insights",
+        "content": [
+          "Use historical data for trend analysis",
+          "Inform layout changes to improve flow",
+          "Enhance visitor experience through data-driven insights",
+          "Generate detailed analytics reports"
+        ]
+      }
+    ],
+    "rotationSpeed": 5,
+    "verticalLayout": false
   }
 }
 
 async function init() {
   try {
+    console.log('Starting kiosk initialization...')
+    
     // Create kiosks directory if it doesn't exist
     await fs.mkdir(KIOSKS_DIR, { recursive: true })
+    console.log('Created kiosks directory')
     
-    // Check if old kiosks.json exists and migrate if needed
-    const oldDataPath = path.join(process.cwd(), 'data', 'kiosks.json')
-    try {
-      const oldData = await fs.readFile(oldDataPath, 'utf8')
-      const kiosks = JSON.parse(oldData)
-      
-      // Migrate each kiosk to its own file
-      for (const [id, kiosk] of Object.entries(kiosks)) {
-        await saveKioskToFile(kiosk as any)
-      }
-      
-      // Optionally backup and remove the old file
-      await fs.rename(oldDataPath, `${oldDataPath}.backup`)
-      console.log('Migrated existing kiosks to individual files')
-    } catch (err) {
-      // Create all kiosks from initialKioskData
-      for (const [id, kiosk] of Object.entries(initialKioskData)) {
-        const kioskPath = path.join(KIOSKS_DIR, `${id}.json`)
-        try {
-          await fs.access(kioskPath)
-          console.log(`Kiosk ${id} already exists, skipping`)
-        } catch {
-          await saveKioskToFile(kiosk)
-          console.log(`Created kiosk: ${id}`)
-        }
+    // Create all kiosks from initialKioskData
+    for (const [id, kiosk] of Object.entries(initialKioskData)) {
+      const kioskPath = path.join(KIOSKS_DIR, `${id}.json`)
+      try {
+        await fs.access(kioskPath)
+        console.log(`Kiosk ${id} already exists, skipping`)
+      } catch {
+        await saveKioskToFile(kiosk)
+        console.log(`Created kiosk: ${id}`)
       }
     }
+    
+    console.log('Kiosk initialization complete')
   } catch (error) {
     console.error('Error initializing data:', error)
     process.exit(1)

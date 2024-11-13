@@ -1,0 +1,74 @@
+{
+  "id": "cv-person-counter",
+  "name": "Sterling CV Person Counter Demo",
+  "headerTitle": "CV PERSON COUNTER DEMO",
+  "headerSubtitle": "Real-time Foot Traffic Analytics",
+  "backgroundWords": [
+    "MONITOR",
+    "ANALYZE",
+    "TRACK",
+    "OPTIMIZE"
+  ],
+  "mainTitle": "Real-Time Foot Traffic Counting",
+  "mainDescription": "Discover how Sterling's computer vision technology counts and analyzes foot traffic in real time, offering actionable insights into visitor behavior and space optimization. Our computer vision-based person counter leverages AI to provide real-time insights into foot traffic, helping businesses optimize their physical spaces by understanding visitor patterns and behavior.",
+  "showPoweredBy": true,
+  "footerText": "Powered by Sterling Innovation Lab",
+  "mainIcon": "Eye",
+  "infoBox1": {
+    "title": "Technology Stack",
+    "content": [
+      "OpenCV",
+      "Python",
+      "TensorFlow",
+      "NVIDIA Jetson Nano"
+    ]
+  },
+  "infoBox2": {
+    "title": "Use Cases",
+    "content": [
+      "Retail Store Visitor Analytics",
+      "Event Space Occupancy Monitoring",
+      "Workspace Foot Traffic Optimization"
+    ]
+  },
+  "sections": [
+    {
+      "title": "Real-Time Visitor Counting",
+      "content": [
+        "AI-based detection for accurate headcounts",
+        "Differentiates between individuals for precision",
+        "Real-time reporting of entry and exit data",
+        "Advanced tracking algorithms for reliable counting"
+      ]
+    },
+    {
+      "title": "Foot Traffic Heatmaps",
+      "content": [
+        "Visualize high-traffic areas within the monitored space",
+        "Use data to improve layout and optimize space usage",
+        "Identify underutilized areas for better management",
+        "Generate detailed heatmaps for spatial analysis"
+      ]
+    },
+    {
+      "title": "Occupancy Monitoring",
+      "content": [
+        "Real-time monitoring of room or space occupancy",
+        "Ensure compliance with safety regulations",
+        "Optimize staffing and resources based on occupancy data",
+        "Automated alerts for occupancy thresholds"
+      ]
+    },
+    {
+      "title": "Actionable Insights",
+      "content": [
+        "Use historical data for trend analysis",
+        "Inform layout changes to improve flow",
+        "Enhance visitor experience through data-driven insights",
+        "Generate detailed analytics reports"
+      ]
+    }
+  ],
+  "rotationSpeed": 5,
+  "verticalLayout": false
+}
